@@ -46,6 +46,12 @@ npm install -g gatsby-cli
 ```
 
 ```
+yarn add babel-preset-gatsby
+```
+Remember to save dev
+
+
+```
 yarn
 ```
 
