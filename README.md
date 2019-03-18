@@ -38,3 +38,17 @@ To test your new configuration, install a package globally without using sudo:
  npm install -g jshint
 
 Will be needed.
+
+## Normal Dev
+
+```
+npm install -g gatsby-cli
+```
+
+```
+yarn
+```
+
+```
+yarn start
+````
