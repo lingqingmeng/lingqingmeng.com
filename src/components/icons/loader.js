@@ -7,7 +7,7 @@ const IconLoader = () => (
       <g id="B" transform="translate(-26.000000, -37.000000)" fill="#64FFDA">
             <g id="LM">
                 <text>
-                    <tspan x="23.285" y="66">LM</tspan>
+                    <tspan x="100" y="100">LM</tspan>
                 </text>
             </g>
         </g>
