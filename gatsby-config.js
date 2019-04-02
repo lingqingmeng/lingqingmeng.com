@@ -1,5 +1,5 @@
 const config = require('./src/config');
-
+//const siteAddress = new URL("https://lingqingmeng.com");
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -59,6 +59,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: config.googleAnalyticsID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'lingqingmeng.com',
+        //protocol: siteAddress.protocol.slice(0, -1),
+        //hostname: siteAddress.hostname,
       },
     },
   ],
