@@ -14,7 +14,7 @@ tech:
 show: 'true'
 ---
 
-●	Lead Software Engineer developing a Mobile Wallet, Chrome Extension Light Client, Frontend CRM React Web App and Backend interfacing each client component into a complete software suite.  
+Lead Software Engineer developing a Mobile Wallet, Chrome Extension Light Client, Frontend CRM React Web App and Backend interfacing each client component into a complete software suite.  
   
 Built a Queue based web worker automating KYC/AML for user registration/onboarding via Redis, Celery, Node and Sendgrid API.    
   
