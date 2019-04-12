@@ -7,7 +7,6 @@ range: 'Jan 2018 - July 2018'
 url: 'http://fr8.network'
 ---
 
-- Developed and shipped highly interactive web applications for Apple Music using Ember.js
-- Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs
-- Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser
-- Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps
+- Lead Software Engineer developing a Mobile Wallet, Chrome Extension Light Client, Frontend CRM React Web App and Backend interfacing each client component into a complete software suite.
+- Built a Queue based web worker automating KYC/AML for user registration/onboarding via Redis, Celery, Node and Sendgrid API. 
+- Implemented industry best practices for user privacy and security. Designed  inhouse 2 factor verification for Mobile Wallet and Chrome Extension Client. Encryption and Decryption methods utilized Elliptic Curve Cryptography.    
