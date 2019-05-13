@@ -25,16 +25,16 @@ Configure npm to use the new directory path:
 npm config set prefix '~/.npm-global'
 ```
 
-In your preferred text editor, open or create a `~/.profile` file and add this line:
+If it's not already in your bashrc already, in your preferred text editor, open or create a `~/.bashrc` file (`~/.bash_profile` on OSX) and add this line:
 
 ```
-export PATH=~/.npm-global/bin:$PATH
+echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.bashrc
 ```
 
 On the command line, update your system variables:
 
 ```
-source ~/.profile
+source ~/.bashrc
 ```
 
 To test your new configuration, install a package globally without using sudo:
