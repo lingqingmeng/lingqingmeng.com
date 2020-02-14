@@ -2,6 +2,11 @@
 
 Personal Portfolio 2019
 
+## Common pain points
+
+Node gyp on mac  
+[Debug article](https://codeforgeek.com/make-failed-with-exit-code-2/)
+
 ## Deploy Staging
 
 Assuming you are on Ubuntu AWS
@@ -50,6 +55,16 @@ Will be needed.
 ```
 npm install -g gatsby-cli
 ```
+
+### On a Macbook Pro
+
+If you haven't ran the code in a while
+
+`yarn upgrade`
+
+verified to do the trick on osx local dev
+
+### Otherwise
 
 ```
 yarn add babel-preset-gatsby --dev

@@ -8,7 +8,7 @@ module.exports = {
   siteLanguage: 'en_US',
   name: 'Ling Qing Meng',
   location: 'San Francisco, CA',
-  email: 'ling.q.meng@gmail.com',
+  email: 'contact@lingqingmeng.com',
   socialMedia: [
     {
       name: 'Github',
