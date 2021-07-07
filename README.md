@@ -95,3 +95,9 @@ yarn start
 ```
 http-server public/ -p 7000
 ```
+
+Add pm2 and run with mp2 for production
+```
+yarn add pm2
+pm2 serve public/ 80
+```
