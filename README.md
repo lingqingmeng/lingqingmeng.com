@@ -2,6 +2,37 @@
 
 Personal Portfolio 2020
 
+## Pre-req
+
+## Ensure access
+
+To minimize the chance of permissions errors, configure npm to use a different directory. This will show you how to create and use a hidden directory in your home directory.
+
+On the command line in `~`, create a directory for global installations:
+
+```bash
+mkdir ~/.npm-global
+```
+   
+Config npm to use the new dir path:
+
+`npm config set prefix '~/.npm-global'`
+
+In RHEL cloud vi open former else open latter
+
+`~/.bashrc` OR `~/.profile`
+
+file and upsert line:
+
+`export PATH=~/.npm-global/bin:$PATH`
+
+On the command line update those system variables:
+
+`source ~/.profile`
+
+Test your new config by installing a package globally without using sudo
+
+
 ## Common pain points
 
 Node gyp on mac  
