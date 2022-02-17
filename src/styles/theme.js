@@ -26,6 +26,34 @@ const theme = {
     transNavy: 'rgba(10, 25, 47, 0.7)',
     shadowNavy: 'rgba(2, 12, 27, 0.9)',
   },
+  colors_option_b: {
+    dark: '#000008',
+    darkestNavy: '#0288d1',
+    darkNavy: '#29b6f6',
+    navy: '#4fc3f7',
+    darkGrey: '#388e3c',
+    mediumGrey: '#66bb6a',
+    blueGrey: '#293d5a',
+    grey: '#81c784',
+
+    slate: '#ab47bc',
+    lightSlate: '#ce93d8',
+    lightestSlate: '#f3e5f5',
+
+    offWhite: '#dce7ff',
+    white: '#e6f1ff',
+    pink: '#FF647F',
+    yellow: '#FFC464',
+    orange: '#FF9E64',
+    green: '#64ffda',
+    blue: '#71AFFF',
+    darkBlue: '#1D7FFC',
+
+    highlight: 'rgba(51, 71, 80, 0.99)',
+    transGreen: 'rgba(110, 245, 208, 0.07)',
+    transNavy: 'rgba(20, 50, 90, 0.7)',
+    shadowNavy: 'rgba(4, 24, 54, 0.9)',
+  },
 
   fonts: {
     Calibre:

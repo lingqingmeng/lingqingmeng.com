@@ -12,7 +12,7 @@ module.exports = {
   socialMedia: [
     {
       name: 'Github',
-      url: 'https://github.com/lingqingmeng/',
+      url: 'https://github.com/decentral-foundation/',
     },
     {
       name: 'Linkedin',
@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/lingqingmeng/',
+      url: 'https://codepen.io/',
     },
     {
       name: 'Instagram',
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/lingqingmeng',
+      url: 'https://twitter.com/lingqingm',
     },
   ],
 
@@ -54,12 +54,14 @@ module.exports = {
   twitterHandle: '@lingqingmeng',
   googleAnalyticsID: 'UA-37317196-4',
 
-  googleVerificatino: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
+  googleVerification: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
   headerHeight: 100,
 
   greenColor: '#64ffda',
   navyColor: '#0a192f',
   darkNavyColor: '#020c1b',
+  armColor: '#a2466c',
+  eeColor: '#f7f0eb',
 
   srConfig: (delay = 200) => {
     return {
