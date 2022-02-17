@@ -102,7 +102,7 @@ If you haven't ran the code in a while
 
 `yarn upgrade`
 
-verified to do the trick on osx local dev
+verified to resolve the issue on osx local dev
 
 ### Otherwise
 
