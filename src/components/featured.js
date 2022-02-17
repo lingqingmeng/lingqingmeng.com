@@ -6,7 +6,7 @@ import { srConfig } from '../config';
 import { IconGithub, IconExternal } from './icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const FeaturedContainer = styled(Section)`
   ${mixins.flexCenter};
@@ -30,7 +30,7 @@ const ContentContainer = styled.div`
 const FeaturedLabel = styled.h4`
   font-size: ${fontSizes.smallish};
   font-weight: normal;
-  color: ${colors.green};
+  color: ${colors_option_b.green};
   font-family: ${fonts.SFMono};
   margin-top: 10px;
   padding-top: 0;
@@ -39,15 +39,15 @@ const ProjectName = styled.h5`
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 20px;
-  color: ${colors.lightestSlate};
+  color: ${colors_option_b.lightestSlate};
   ${media.tablet`font-size: 24px;`};
   a {
     ${media.tablet`display: block;`};
   }
 `;
 const ProjectDescription = styled.div`
-  background-color: ${colors.lightNavy};
-  color: ${colors.lightSlate};
+  background-color: ${colors_option_b.lightNavy};
+  color: ${colors_option_b.lightSlate};
   padding: 25px;
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.large};
@@ -60,7 +60,7 @@ const ProjectDescription = styled.div`
   }
   a {
     ${mixins.inlineLink};
-    color: ${colors.white};
+    color: ${colors_option_b.white};
   }
 `;
 const TechList = styled.ul`
@@ -70,7 +70,7 @@ const TechList = styled.ul`
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.smallish};
-    color: ${colors.lightSlate};
+    color: ${colors_option_b.lightSlate};
     margin-right: ${theme.margin};
     margin-bottom: 7px;
     white-space: nowrap;
@@ -78,7 +78,7 @@ const TechList = styled.ul`
       margin-right: 0;
     }
     ${media.thone`
-      color: ${colors.lightestSlate};
+      color: ${colors_option_b.lightestSlate};
       margin-right: 10px;
     `};
   }
@@ -116,7 +116,7 @@ const ImgContainer = styled.div`
   position: relative;
   z-index: 1;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
+  background-color: ${colors_option_b.green};
   border-radius: 2px;
   grid-column: 6 / -1;
   grid-row: 1 / -1;
@@ -146,7 +146,7 @@ const ImgContainer = styled.div`
     bottom: 0;
     z-index: 3;
     transition: ${theme.transition};
-    background-color: ${colors.navy};
+    background-color: ${colors_option_b.navy};
     mix-blend-mode: screen;
   }
 `;
