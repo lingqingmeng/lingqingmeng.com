@@ -1,6 +1,15 @@
-# lingqingmeng.com
+# ondecentral.com
 
-Personal Portfolio 2020
+| | |
+|-|-|
+|start gatsby dev server|`gatsby develop`|
+|build static site|`gatsby build` |
+
+
+
+
+
+
 
 ## Pre-req
 
