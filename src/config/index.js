@@ -1,9 +1,7 @@
 module.exports = {
-  siteTitle: 'Ling Qing Meng | Speaker, Engineer, Entrepreneur',
-  siteDescription:
-    'Ling Qing Meng is an entrepreneur, investor and software engineer based in San Francisco, CA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
-  siteKeywords:
-    'Ling Qing Meng, Ling Qing, Meng, lingqingmeng, entrepreneur, software engineer, front-end engineer, blockchain engineer, nodejs, umn, rust',
+  siteTitle: 'Pairing - Blockchain SDK and Node Provider',
+  siteDescription: 'Site Description goes here',
+  siteKeywords: 'substrate, polkadot, nodejs, rust',
   siteUrl: 'https://lingqingmeng.com',
   siteLanguage: 'en_US',
   name: 'Ling Qing Meng',

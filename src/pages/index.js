@@ -65,7 +65,7 @@ export const query = graphql`
                 }
               }
             }
-            skills
+            integrations
           }
           html
         }
