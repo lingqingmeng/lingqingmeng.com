@@ -28,4 +28,4 @@ We are building 3 primary components:
 
 Worry less about custodianship, exchange rate volatility, dealing with cryptocurrency exchanges, and cryptocurrency to fiat off-ramps.
 
-Protection with
+Protection with industry leading security.

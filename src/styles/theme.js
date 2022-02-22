@@ -53,7 +53,7 @@ const theme = {
     highlight: 'rgba(51, 71, 80, 0.99)',
     transGreen: 'rgba(110, 245, 208, 0.07)',
     transNavy: 'rgba(20, 50, 90, 0.7)',
-    shadowNavy: 'rgba(4, 24, 54, 0.9)',
+    shadowNavy: '#453e34',
   },
 
   fonts: {
