@@ -17,6 +17,7 @@ const theme = {
     white: '#e6f1ff',
     pink: '#FF647F',
     yellow: '#FFC464',
+    leetcode: '#e8804d',
     orange: '#FF9E64',
     green: '#64ffda',
     blue: '#71AFFF',
@@ -39,21 +40,20 @@ const theme = {
     slate: '#e3f2fd',
     lightSlate: '#f3e5f5',
     lightestSlate: '#ffffcc',
-
     offWhite: '#dce7ff',
     white: '#e6f1ff',
     pink: '#FF647F',
     yellow: '#fcba03',
-    red: '#7d0606',
+    red: '#e60e2b',
     orange: '#FF9E64',
     green: '#64ffda',
     blue: '#71AFFF',
     darkBlue: '#1D7FFC',
 
-    highlight: 'rgba(51, 71, 80, 0.99)',
+    highlight: 'rgba(222, 0, 222, 0.99)',
     transGreen: 'rgba(110, 245, 208, 0.07)',
     transNavy: 'rgba(20, 50, 90, 0.7)',
-    shadowNavy: '#453e34',
+    shadowNavy: '#2b2824',
   },
 
   fonts: {

@@ -85,7 +85,7 @@ const HamburgerBox = styled.div`
   height: 24px;
 `;
 const HamburgerInner = styled.div`
-  background-color: ${colors_option_b.green};
+  background-color: ${colors_option_b.white};
   position: absolute;
   width: ${theme.hamburgerWidth}px;
   height: 2px;
@@ -104,7 +104,7 @@ const HamburgerInner = styled.div`
   &:after {
     content: '';
     display: block;
-    background-color: ${colors_option_b.green};
+    background-color: ${colors_option_b.white};
     position: absolute;
     left: auto;
     right: 0;
@@ -302,7 +302,7 @@ class Header extends Component {
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
                     <ResumeLink href={resume} target="_blank" rel="nofollow noopener noreferrer">
-                      W3F Grant
+                      Prospectus
                     </ResumeLink>
                   </div>
                 </CSSTransition>

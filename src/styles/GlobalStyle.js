@@ -217,7 +217,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors_option_b.green};
+      color: ${colors_option_b.pink};
       outline: 0;
     }
   }

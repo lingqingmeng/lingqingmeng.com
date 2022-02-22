@@ -4,7 +4,7 @@ import ScrollReveal from 'scrollreveal';
 import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const JobsContainer = styled(Section)`
   position: relative;
@@ -37,29 +37,29 @@ const Tab = styled.button`
   height: ${theme.tabHeight}px;
   padding: 0 20px 2px;
   transition: ${theme.transition};
-  border-left: 2px solid ${colors.darkGrey};
+  border-left: 2px solid ${colors_option_b.darkGrey};
   text-align: left;
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smallish};
-  color: ${props => (props.isActive ? colors.green : colors.lightGrey)};
+  color: ${props => (props.isActive ? colors_option_b.green : colors_option_b.lightGrey)};
   ${media.tablet`padding: 0 15px 2px;`};
   ${media.thone`
     ${mixins.flexCenter};
     padding: 0 15px;
     text-align: center;
     border-left: 0;
-    border-bottom: 2px solid ${colors.darkGrey};
+    border-bottom: 2px solid ${colors_option_b.darkGrey};
     min-width: 120px;
   `};
   &:hover,
   &:focus {
-    background-color: ${colors.lightNavy};
+    background-color: ${colors_option_b.shadowNavy};
   }
 `;
 const Highlighter = styled.span`
   display: block;
-  background: ${colors.green};
+  background: ${colors_option_b.red};
   width: 2px;
   height: ${theme.tabHeight}px;
   border-radius: ${theme.borderRadius};
@@ -115,7 +115,7 @@ const TabContent = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: ${colors.green};
+        color: ${colors_option_b.red};
         line-height: ${fontSizes.xlarge};
       }
     }
@@ -125,20 +125,20 @@ const TabContent = styled.div`
   }
 `;
 const JobTitle = styled.h4`
-  color: ${colors.lightestSlate};
+  color: ${colors_option_b.white};
   font-size: ${fontSizes.xxlarge};
   font-weight: 500;
   margin-bottom: 5px;
 `;
 const Company = styled.span`
-  color: ${colors.green};
+  color: ${colors_option_b.green};
 `;
 const JobDetails = styled.h5`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smallish};
   font-weight: normal;
   letter-spacing: 0.5px;
-  color: ${colors.lightSlate};
+  color: ${colors_option_b.lightSlate};
   margin-bottom: 30px;
   svg {
     width: 15px;

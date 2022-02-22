@@ -55,7 +55,7 @@ module.exports = {
   googleVerification: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
   headerHeight: 100,
 
-  greenColor: '#64ffda',
+  greenColor: '#e8804d',
   navyColor: '#1f1d1d',
   darkNavyColor: '#f7f0eb',
   armColor: '#a2466c',

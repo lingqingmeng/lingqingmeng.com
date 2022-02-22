@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import theme from './theme';
 import media from './media';
-const { colors, fontSizes, fonts } = theme;
+const { colors, colors_option_b, fontSizes, fonts } = theme;
 
 const mixins = {
   flexCenter: css`
@@ -31,7 +31,7 @@ const mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${colors.green};
+      color: ${colors_option_b.offWhite};
       outline: 0;
     }
   `,
@@ -43,7 +43,7 @@ const mixins = {
     position: relative;
     transition: ${theme.transition};
     cursor: pointer;
-    color: ${colors.green};
+    color: ${colors.leetcode};
     &:hover,
     &:focus,
     &:active {
@@ -60,15 +60,15 @@ const mixins = {
       height: 1px;
       position: relative;
       bottom: 0.37em;
-      background-color: ${colors.green};
+      background-color: ${colors.blueGrey};
       transition: ${theme.transition};
     }
   `,
 
   smallButton: css`
-    color: ${colors.green};
+    color: ${colors.leetcode};
     background-color: transparent;
-    border: 1px solid ${colors.green};
+    border: 1px solid ${colors.leetcode};
     border-radius: ${theme.borderRadius};
     padding: 12px 17px;
     font-size: ${fontSizes.smallish};
@@ -88,9 +88,9 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: ${colors.green};
+    color: ${colors.leetcode};
     background-color: transparent;
-    border: 1px solid ${colors.green};
+    border: 1px solid ${colors.leetcode};
     border-radius: ${theme.borderRadius};
     padding: 18px 23px;
     font-size: ${fontSizes.small};

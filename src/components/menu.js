@@ -58,7 +58,7 @@ const NavListItem = styled.li`
   &:before {
     display: block;
     content: '0' counter(item) '.';
-    color: ${colors.green};
+    color: ${colors.leetcode};
     font-size: ${fontSizes.small};
     margin-bottom: 5px;
   }
@@ -105,7 +105,7 @@ class Menu extends Component {
               </NavList>
             )}
             <ResumeLink href={resume} target="_blank" rel="nofollow noopener noreferrer">
-              Resume
+              Prospectus
             </ResumeLink>
           </NavLinks>
         </Sidebar>
