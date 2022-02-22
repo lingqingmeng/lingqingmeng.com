@@ -47,13 +47,13 @@ const Logo = styled.div`
   ${mixins.flexCenter};
 `;
 const LogoLink = styled(Link)`
-  color: ${colors_option_b.green};
+  color: ${colors_option_b.yellow};
   width: 42px;
   height: 42px;
   &:hover,
   &:focus {
     svg {
-      fill: ${colors_option_b.transGreen};
+      fill: ${colors_option_b.yellow};
     }
   }
   svg {
@@ -146,7 +146,7 @@ const NavListItem = styled.li`
   &:before {
     content: '0' counter(item) '.';
     text-align: right;
-    color: ${colors_option_b.green};
+    color: ${colors_option_b.offWhite};
     font-size: ${fontSizes.xsmall};
   }
 `;

@@ -56,7 +56,7 @@ module.exports = {
   headerHeight: 100,
 
   greenColor: '#64ffda',
-  navyColor: '#a2466c',
+  navyColor: '#1f1d1d',
   darkNavyColor: '#f7f0eb',
   armColor: '#a2466c',
   eeColor: '#f7f0eb',
