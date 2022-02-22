@@ -1,16 +1,16 @@
 {
-  "name": "lingqingmeng",
-  "description": "Personal Website V4",
-  "version": "1.0.0",
+  "name": "ondecentral.com",
+  "description": "Landing Page v0.1.0",
+  "version": "0.1.0",
   "author": "Ling Qing Meng <ling.q.meng@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lingqingmeng/lingqingmeng.com"
+    "url": "https://github.com/decentral-foundation/ondecentral.com"
   },
   "keywords": [
-    "lingqingmeng"
+    "decentral",
+    "finance"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
