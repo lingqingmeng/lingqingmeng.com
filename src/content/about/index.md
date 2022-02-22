@@ -26,5 +26,6 @@ Pairing enables businesses to reduce the lag time of hiring a new employee or on
 
 We are building 3 primary components:
 
-- Merchant Onboarding & Settlement: We will be creating a wallet onboarding system to make it easy for new users to turn any digital assets into cash or transfer it into their online bank account. We design this to be useable just like any well known, brand-name banking app. The merchant will not need to worry about custodianship, exchange rate volatility, dealing with cryptocurrency exchanges, and cryptocurrency to fiat off-ramps.
-- Payment Acceptance In Store, Online, In App: Android and iOS SDK, and API. Our go to market strategy is to B2B by providing easy to integrate cryptocurrency acceptance API’s and SDK’s to existing Point of Sale Developer and other merchant acquirers. Our API & SDK will allow us to navigate the emerging standards and user experience methods that cryptocurrency wallets are developing, leaving that complexity to us rather than the Point of Sale software developer.
+Worry less about custodianship, exchange rate volatility, dealing with cryptocurrency exchanges, and cryptocurrency to fiat off-ramps.
+
+Protection with

@@ -1,6 +1,6 @@
-# lingqingmeng.com
+# ondecentral.com
 
-Personal Portfolio 2020
+Landing page 2/2/2022
 
 ## Pre-req
 
@@ -13,7 +13,7 @@ On the command line in `~`, create a directory for global installations:
 ```bash
 mkdir ~/.npm-global
 ```
-   
+
 Config npm to use the new dir path:
 
 `npm config set prefix '~/.npm-global'`
@@ -31,7 +31,6 @@ On the command line update those system variables:
 `source ~/.profile`
 
 Test your new config by installing a package globally without using sudo
-
 
 ## Common pain points
 
@@ -128,6 +127,7 @@ http-server public/ -p 7000
 ```
 
 Add pm2 and run with mp2 for production
+
 ```
 yarn add pm2
 pm2 serve public/ 80

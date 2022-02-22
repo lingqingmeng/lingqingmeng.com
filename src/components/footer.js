@@ -76,7 +76,7 @@ const Footer = () => (
         href="https://github.com/lingqingmeng/"
         target="_blank"
         rel="nofollow noopener noreferrer">
-        © 2022 &amp; Decentral Inc All Rights Reserved
+        © 2022 Decentral Inc All Rights Reserved
       </GithubLink>
     </Copy>
   </FooterContainer>
