@@ -30,7 +30,7 @@ const ContentContainer = styled.div`
 const FeaturedLabel = styled.h4`
   font-size: ${fontSizes.smallish};
   font-weight: normal;
-  color: ${colors_option_b.green};
+  color: ${colors_option_b.lightestSlate};
   font-family: ${fonts.SFMono};
   margin-top: 10px;
   padding-top: 0;
@@ -116,7 +116,7 @@ const ImgContainer = styled.div`
   position: relative;
   z-index: 1;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors_option_b.green};
+  background-color: ${colors_option_b.lightestSlate};
   border-radius: 2px;
   grid-column: 6 / -1;
   grid-row: 1 / -1;
