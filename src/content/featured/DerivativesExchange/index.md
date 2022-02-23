@@ -5,10 +5,9 @@ cover: './desk.png'
 github: 'https://github.com/decentral-inc/'
 external: 'https://pairing.ondecentral.net'
 tech:
-  - Golang
+  - Rust
   - Solidity
   - Kubernetes
-  - Truffle
   - AWS
 show: 'true'
 ---
