@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
 
-const JobsContainer = styled(Section)`
+const ProductContainer = styled(Section)`
   position: relative;
   max-width: 700px;
 `;
@@ -145,7 +145,7 @@ const JobDetails = styled.h5`
   }
 `;
 
-class Jobs extends Component {
+class Product extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
   };
@@ -155,7 +155,7 @@ class Jobs extends Component {
   };
 
   componentDidMount() {
-    ScrollReveal().reveal(this.jobs, srConfig());
+    ScrollReveal().reveal(this.product, srConfig());
   }
 
   isActive = id => this.state.activeTabId === id;
@@ -167,7 +167,7 @@ class Jobs extends Component {
     const { data } = this.props;
 
     return (
-      <JobsContainer id="jobs" ref={el => (this.jobs = el)}>
+      <ProductContainer id="product" ref={el => (this.product = el)}>
         <Heading>Where I&apos;ve Worked</Heading>
         <TabsContainer>
           <Tabs role="tablist">
@@ -222,9 +222,9 @@ class Jobs extends Component {
               })}
           </ContentContainer>
         </TabsContainer>
-      </JobsContainer>
+      </ProductContainer>
     );
   }
 }
 
-export default Jobs;
+export default Product;
