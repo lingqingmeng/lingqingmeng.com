@@ -1,6 +1,17 @@
 # ondecentral.com
 
+
 Landing page 2/2/2022
+
+
+| | |
+|-|-|
+|start gatsby dev server|`gatsby develop`|
+|build static site|`gatsby build` |
+
+
+
+
 
 ## Pre-req
 
@@ -92,7 +103,7 @@ If you haven't ran the code in a while
 
 `yarn upgrade`
 
-verified to do the trick on osx local dev
+verified to resolve the issue on osx local dev
 
 ### Otherwise
 
@@ -102,33 +113,37 @@ yarn add babel-preset-gatsby --dev
 
 Remember to save dev
 
-```
+```zsh
 yarn
 ```
 
-```
+```zsh
 yarn build
 ```
 
 Run with local http-server if staging
 
-```
+```zsh
 ./node_modules/http-server/bin/http-server public/ -p 7000
 ```
 
 if on local dev environemnt run
 
-```
+```zsh
 yarn start
 ```
 
-```
+```zsh
 http-server public/ -p 7000
 ```
 
-Add pm2 and run with mp2 for production
+Add pm2 and run with pm2 for production
 
-```
+
+
+Add pm2 and run with pm2 for production
+
+```zsh
 yarn add pm2
 pm2 serve public/ 80
 ```
