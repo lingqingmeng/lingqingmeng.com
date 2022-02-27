@@ -1,10 +1,10 @@
 ---
-date: '2012-11-04'
-title: 'Front End Engineer'
-company: 'The Clorox Company'
+date: '2022-02-01'
+title: 'Feature B'
+company: 'Product B'
 location: 'Oakland, CA'
-range: 'Nov 2012 - May 2013'
-url: 'https://www.thecloroxcompany.com/'
+range: 'Book Live Demo Now'
+url: 'https://b.ondecentral.com/'
 ---
 
 - Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery

@@ -22,6 +22,8 @@ Over the span of multiple weeks our product provided the website and media mater
 
 The content creator's blueprint was a collaborative effort between experts in social economics, policy and blockchain developers. They were able to use decentral's product and took ownership of authoring sections for the underlying technology, token distribution model, engineering roadmap.
 
+![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00417_preview.jpeg)
+
 This included:
 
 - Network Architecture Diagram
