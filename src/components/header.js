@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import { throttle } from '../utils';
 import { headerHeight } from '../config';
-import FormD from '../images/FormD.pdf';
+import FormD from '../documents/FormD.pdf';
 import Menu from './menu';
 import { IconLogo } from './icons';
 import styled from 'styled-components';

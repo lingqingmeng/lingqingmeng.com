@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import FormD from '../images/FormD.pdf';
+import FormD from '../documents/FormD.pdf';
 import styled from 'styled-components';
 import { theme, mixins, media, Nav } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
