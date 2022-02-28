@@ -1,12 +1,12 @@
 module.exports = {
-  siteTitle: 'Pairing - Blockchain SDK and Node Provider',
-  siteDescription: 'Site Description goes here',
+  siteTitle: 'Pairing - Blockchain contract management platform',
+  siteDescription: '& the number one way to hire an engineer',
   siteKeywords: 'substrate, polkadot, nodejs, rust',
-  siteUrl: 'https://lingqingmeng.com',
+  siteUrl: 'https://ondecentral.com',
   siteLanguage: 'en_US',
   name: 'Ling Qing Meng',
   location: 'San Francisco, CA',
-  email: 'contact@lingqingmeng.com',
+  email: 'contact@ondecentral.com',
   socialMedia: [
     {
       name: 'Github',
