@@ -10,7 +10,7 @@ import Footer from './footer';
 import { nav } from '../config';
 import styled from 'styled-components';
 import { GlobalStyle, theme } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const SkipToContent = styled.a`
   position: absolute;
@@ -21,13 +21,13 @@ const SkipToContent = styled.a`
   overflow: hidden;
   z-index: -99;
   &:hover {
-    background-color: ${colors.darkGrey};
+    background-color: ${colors_option_b.vanillaDarkGrey};
   }
   &:focus,
   &:active {
     outline: 0;
-    color: ${colors.leetcode};
-    background-color: ${colors.lightNavy};
+    color: ${colors_option_b.vanillaLeetcode};
+    background-color: ${colors_option_b.vanillaLightNavy};
     border-radius: ${theme.borderRadius};
     padding: 18px 23px;
     font-size: ${fontSizes.small};

@@ -3,19 +3,19 @@ import { IconGithub, IconLinkedin, IconCodepen, IconInstagram, IconTwitter } fro
 import { socialMedia } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const FooterContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
   padding: 15px;
-  background-color: ${colors.darkNavy};
-  color: ${colors.slate};
+  background-color: ${colors_option_b.darkNavy};
+  color: ${colors_option_b.slate};
   text-align: center;
   height: auto;
 `;
 const SocialContainer = styled.div`
-  color: ${colors.lightSlate};
+  color: ${colors_option_b.lightSlate};
   width: 100%;
   max-width: 270px;
   margin: 0 auto 10px;
@@ -36,7 +36,7 @@ const Copy = styled.p`
   margin: 5px 0 3px;
 `;
 const GithubLink = styled.a`
-  color: ${colors.slate};
+  color: ${colors_option_b.slate};
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.xsmall};
 `;

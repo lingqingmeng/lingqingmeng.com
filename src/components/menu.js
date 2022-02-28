@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import resume from '../images/resume.pdf';
 import styled from 'styled-components';
 import { theme, mixins, media, Nav } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const MenuContainer = styled.div`
   position: fixed;
@@ -24,7 +24,7 @@ const MenuContainer = styled.div`
 const Sidebar = styled.div`
   ${mixins.flexCenter};
   flex-direction: column;
-  background-color: ${colors.lightNavy};
+  background-color: ${colors_option_b.vanillaLightNavy};
   padding: 50px;
   width: 50vw;
   height: 100%;
@@ -32,7 +32,7 @@ const Sidebar = styled.div`
   right: 0;
   margin-left: auto;
   font-family: ${fonts.SFMono};
-  box-shadow: -2px 0px 4px ${colors.transNavy};
+  box-shadow: -2px 0px 4px ${colors_option_b.vanillaTransNavy};
   ${media.thone`padding: 25px;`};
   ${media.phablet`width: 75vw;`};
   ${media.tiny`padding: 10px;`};
@@ -58,7 +58,7 @@ const NavListItem = styled.li`
   &:before {
     display: block;
     content: '0' counter(item) '.';
-    color: ${colors.leetcode};
+    color: ${colors_option_b.vanillaLeetcode};
     font-size: ${fontSizes.small};
     margin-bottom: 5px;
   }
