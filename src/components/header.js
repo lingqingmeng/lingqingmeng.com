@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import { throttle } from '../utils';
 import { headerHeight } from '../config';
-import resume from '../images/resume.pdf';
+import FormD from '../images/FormD.pdf';
 import Menu from './menu';
 import { IconLogo } from './icons';
 import styled from 'styled-components';
@@ -301,8 +301,8 @@ class Header extends Component {
               {isMounted && (
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
-                    <ResumeLink href={resume} target="_blank" rel="nofollow noopener noreferrer">
-                      Prospectus
+                    <ResumeLink href={FormD} target="_blank" rel="nofollow noopener noreferrer">
+                      Investors
                     </ResumeLink>
                   </div>
                 </CSSTransition>

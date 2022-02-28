@@ -22,13 +22,13 @@ Pairing enables businesses to reduce the lag time of hiring a new employee or on
 
 ### Product at a glance
 
-- Wallet
-- Bookkeeping System
+- Wallet for Options and Payroll
 - Contract management platform
+- Liquidity System
 
 We are building 3 primary components:
 
-Worry less about custodianship, exchange rate volatility, dealing with cryptocurrency exchanges, and cryptocurrency to fiat off-ramps.
+Automate processes to minimize opex - custodianship, exchange rate volatility, integrations with exchanges.
 
 Protection with industry leading security.
 

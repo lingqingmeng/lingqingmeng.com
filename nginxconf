@@ -1,6 +1,6 @@
 server {
     listen 80 default_server;
-    server_name test.ondecentral.com;
+    server_name apply.ondecentral.com;
     listen [::]:80 default_server ipv6only=on;
 }
 
@@ -9,9 +9,9 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
     ssl on;
-    server_name test.ondecentral.com;
-    ssl_certificate /etc/nginx/ssl/lqmssl/test.ondecentral.com.app.chain.crt;
-    ssl_certificate_key /etc/nginx/ssl/lqmssl/test.ondecentral.com.app.key;
+    server_name apply.ondecentral.com;
+    ssl_certificate /etc/letsencrypt/live/apply.ondecentral.com.app.chain.crt;
+    ssl_certificate_key /etc/letsencrypt/live/apply.ondecentral.com.app.key;
 
     client_max_body_size 4G;
 

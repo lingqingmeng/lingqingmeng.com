@@ -3,7 +3,7 @@ date: '2022-02-01'
 title: 'Feature Z'
 company: 'Product Z'
 location: 'San Francisco, CA'
-range: 'Oct 2015 - Apr 2017'
+range: 'Link to Demo'
 url: 'https://z.ondecentral.com'
 ---
 

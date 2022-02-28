@@ -73,7 +73,7 @@ const Footer = () => (
     </SocialContainer>
     <Copy>
       <GithubLink
-        href="https://github.com/lingqingmeng/"
+        href="https://github.com/decentral-foundation/"
         target="_blank"
         rel="nofollow noopener noreferrer">
         © 2022 Decentral Inc All Rights Reserved

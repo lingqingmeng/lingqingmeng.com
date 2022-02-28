@@ -14,4 +14,12 @@ show: 'true'
 
 Employee Options Platform.
 
-We are a platform that's the number one way to hire an engineer. Our platform grows your startup and gives you flexibility in tracking your finances, creating incentives, managing HR and payroll, and most importantly building your company to maximize team cohesiveness.
+The platform that's the number one way to hire an engineer.
+
+Our platform gives you flexibility and delegation power
+
+Tracking your finances, collaborate on contracts.
+
+One button to manage HR and payroll.
+
+Designs your company to maximize team cohesiveness.

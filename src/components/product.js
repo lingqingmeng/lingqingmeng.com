@@ -168,7 +168,7 @@ class Product extends Component {
 
     return (
       <ProductContainer id="product" ref={el => (this.product = el)}>
-        <Heading>Where I&apos;ve Worked</Heading>
+        <Heading>Trust the Process</Heading>
         <TabsContainer>
           <Tabs role="tablist">
             {data &&
