@@ -12,8 +12,9 @@ tech:
 show: 'true'
 ---
 
-Most startups are utilizing only 10% of their network. Convey the full value of your firm.
-
-Machine learning powered spot checker.
-
-Be notified on issues affecting principal.
+Most startups are utilizing only 10% of their network.
+Let's say you have 2 positions to fill.
+That could mean hundreds of hours of manual work each month.
+Or you could use our technology.
+Our product is a Machine learning hiring agent.
+It is the best way to hire a person for your team.

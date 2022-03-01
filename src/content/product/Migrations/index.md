@@ -3,7 +3,7 @@ date: '2022-02-01'
 title: 'Product X'
 company: 'Analyst'
 location: 'New York, NY'
-range: 'Link to Demo'
+range: 'Coordinate with your back office on the best case study to have your analyst perform during the interview'
 url: 'https://x.ondecentral.com'
 ---
 
