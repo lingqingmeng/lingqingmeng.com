@@ -9,4 +9,6 @@ Managing fundraising and financing can be a full time commitment for many founde
 
 We sat down with multiple founders to hear exactly how they closed their round with Pairing.
 
-No matter what industry you're in, Pairing can help you scale without dilution and aggressive takeover clauses.
+<br/><br/>
+We're hiring. <br/>
+Join our team

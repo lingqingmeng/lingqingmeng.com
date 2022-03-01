@@ -89,7 +89,7 @@ class Hero extends Component {
     );
     const five = () => (
       <div style={{ transitionDelay: '500ms' }}>
-        <EmailLink href={`mailto:${email}`}>Get In Touch</EmailLink>
+        <EmailLink href={`mailto:${email}`}>View Open Positions</EmailLink>
       </div>
     );
 

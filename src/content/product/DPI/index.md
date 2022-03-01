@@ -1,9 +1,9 @@
 ---
 date: '2022-02-01'
-title: 'Feature A'
-company: 'Product A'
+title: 'Product A'
+company: 'Personal Assistant'
 location: 'Foster City, CA'
-range: 'Book Live Demo Now'
+range: 'Automate email or SMS based messaging recruitment followups to make sure they can relocate to your city'
 url: 'https://a.ondecentral.com'
 ---
 

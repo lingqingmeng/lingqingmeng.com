@@ -1,9 +1,9 @@
 ---
 date: '2022-02-01'
-title: 'Feature B'
-company: 'Histogram'
+title: 'Histogram'
+company: 'DevOps & QA'
 location: 'Oakland, CA'
-range: 'Link to Demo'
+range: 'Plug and play directly from your product requirements document'
 url: 'https://b.ondecentral.com/'
 ---
 

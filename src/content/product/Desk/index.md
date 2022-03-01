@@ -1,9 +1,9 @@
 ---
 date: '2022-02-01'
-title: 'Feature Y'
-company: 'Product Y'
+title: 'Product Y'
+company: 'Software Engineer'
 location: 'Chicago, US'
-range: 'Link to Demo'
+range: 'Proactively assigns each and every round of the 4 step interview process. Finds a time that works best for both parties, knowing talented individuals are going to have busy schedules'
 url: 'https://y.ondecentral.com/'
 ---
 
