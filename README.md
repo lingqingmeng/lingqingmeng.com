@@ -13,6 +13,14 @@
 
 ## Pre-req
 
+## Install yarn on cloud instances
+
+```bash
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+```
+
 ## Ensure access
 
 To minimize the chance of permissions errors, configure npm to use a different directory. This will show you how to create and use a hidden directory in your home directory.
