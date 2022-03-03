@@ -13,16 +13,16 @@ const IconLogo = () => (
           strokeLinejoin="round"
           strokeWidth="10"
         />
-        <g id="B" fill="#e60e2b" transform="translate(11.000000, 5.000000)">
-          <g id="LM">
+        <g id="B" fill="#e60e2b" transform="translate(25.000000, 5.000000)">
+          <g id="P">
             <text
-              id="LM"
+              id="P"
               fill="#e60e2b"
               fontFamily="AppleSDGothicNeo-Bold, Apple SD Gothic Neo"
               fontSize="39"
               fontWeight="bold">
               <tspan x="3" y="55">
-                LM
+                P
               </tspan>
             </text>
           </g>
