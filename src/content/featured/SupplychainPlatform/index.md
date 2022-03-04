@@ -1,6 +1,6 @@
 ---
 date: '1'
-title: 'Follow compliance and investment protocol'
+title: 'Your AI fundraising agent'
 cover: './portfolio.jpeg'
 github: 'https://github.com/ondecentral'
 external: 'https://apply.ondecentral.com'

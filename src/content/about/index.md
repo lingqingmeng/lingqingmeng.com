@@ -1,6 +1,6 @@
 ---
 title: 'What we are building'
-avatar: './me.png'
+avatar: './main.jpeg'
 integrations:
   - Rust
   - Solidity
@@ -18,7 +18,7 @@ Our company is creating a system for bringing onboard new talent for your brand 
 
 Pairing enables businesses to reduce the lag time of hiring a new employee or onboarding a remote team member.
 
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00446_preview.jpeg)
+![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00630_preview.jpeg)
 
 ### Product at a glance
 
@@ -33,5 +33,3 @@ We are building 3 primary components:
 3. Exchange rate volatility
 
 Protection with industry leading security.
-
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00630_preview.jpeg)
