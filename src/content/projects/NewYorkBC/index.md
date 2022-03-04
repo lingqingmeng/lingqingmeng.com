@@ -10,7 +10,7 @@ tech:
   - NPM
   - Yarn
   - Crates.io
-show: 'true'
+show: 'false'
 ---
 
 ### Overview

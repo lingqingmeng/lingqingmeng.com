@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Follow compliance and investment protocol'
-cover: './folio.png'
+cover: './portfolio.jpeg'
 github: 'https://github.com/ondecentral'
 external: 'https://apply.ondecentral.com'
 tech:

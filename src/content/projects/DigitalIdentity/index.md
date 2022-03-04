@@ -9,7 +9,7 @@ tech:
   - MimbleWimble
   - Ring Signatures
   - ZK Snarks
-show: 'true'
+show: 'false'
 ---
 
 ### Overview
@@ -21,8 +21,6 @@ A content creator based in Los Angeles faced a recurring challenges centered aro
 Over the span of multiple weeks our product provided the website and media materials, and turned their multi-faceted problem into a specific one. First we let the client fully define the problem in terms of his scope of expertise, which was building and scaling small startups. From those requirements we were able to provide a prototype and whitepaper that details the necessary blockchain protocols needed to solve the content creation problem in each subdomain.
 
 The content creator's blueprint was a collaborative effort between experts in social economics, policy and blockchain developers. They were able to use decentral's product and took ownership of authoring sections for the underlying technology, token distribution model, engineering roadmap.
-
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00417_preview.jpeg)
 
 This included:
 

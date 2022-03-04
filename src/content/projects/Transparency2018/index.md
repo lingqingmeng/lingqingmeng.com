@@ -8,16 +8,12 @@ tech:
   - Starkware
   - Iron Mountain
   - Pairing
-show: 'true'
+show: 'false'
 ---
 
 Lorem Ipsum
 
 ![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00762_preview.jpeg)
-
-Lorem Ipsum
-
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00440_preview.jpeg)
 
 Lorem Ipsum
 

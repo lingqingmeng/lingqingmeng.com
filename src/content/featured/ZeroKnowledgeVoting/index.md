@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Manage 60 high ROI conversations'
-cover: './zksnark.png'
+cover: './zkstark.jpeg'
 github: 'https://github.com/decentral-inc/secret-voting'
 external: 'https://youtu.be/-RvbNYu_Eo4'
 tech:

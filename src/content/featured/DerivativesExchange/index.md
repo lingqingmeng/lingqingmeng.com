@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Pairing'
-cover: './desk.png'
+cover: './futures.jpeg'
 github: 'https://github.com/decentral-inc/'
 external: 'https://pairing.ondecentral.net'
 tech:
