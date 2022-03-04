@@ -28,7 +28,9 @@ Pairing enables businesses to reduce the lag time of hiring a new employee or on
 
 We are building 3 primary components:
 
-Automate processes to minimize opex - custodianship, exchange rate volatility, integrations with exchanges.
+1. Automate processes to minimize opex
+2. Custodianship
+3. Exchange rate volatility
 
 Protection with industry leading security.
 

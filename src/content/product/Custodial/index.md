@@ -1,11 +1,12 @@
 ---
 date: '2022-02-01'
-title: 'Product Z'
-company: 'Virtual Developers'
+title: 'Archetype'
+company: 'Remote Teams'
 location: 'San Francisco, CA'
-range: 'Link to Demo'
+range: 'Work shoulder to shoulder with designers and management team to develop, document, and delegate processes for a united global team'
 url: 'https://z.ondecentral.com'
 ---
 
-- Collaborated with a small team of student designers
-- Worked closely with designers and management team to develop, document, and manage the investor list from the set of major industry conferences
+- Collaborate with teams of skilled remote developers
+- Sourced from countries that foster the best of the best in software engineering
+- Seamless transition from remote hire to an O1 Visa and give them your best hires the opportunity of a lifetime

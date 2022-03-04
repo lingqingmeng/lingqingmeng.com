@@ -1,6 +1,6 @@
 ---
 date: '2022-02-01'
-title: 'Product Y'
+title: 'Archetype'
 company: 'Software Engineer'
 location: 'Chicago, US'
 range: 'Proactively assigns each and every round of the 4 step interview process. Finds a time that works best for both parties, knowing talented individuals are going to have busy schedules'

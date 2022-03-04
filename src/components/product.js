@@ -207,7 +207,7 @@ class Product extends Component {
                     <JobTitle>
                       <span>{title}</span>
                       <Company>
-                        &nbsp;@&nbsp;
+                        &nbsp;&nbsp;
                         <a href={url} target="_blank" rel="nofollow noopener noreferrer">
                           {company}
                         </a>

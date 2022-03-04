@@ -15,7 +15,7 @@ show: 'true'
 Employee Options Platform.
 
 The platform that's the number one way to hire.
-Our platform gives you flexibility and delegation power.
+Our platform gives you the flexibility and delegation power for building a rockstar team.
 Single source of truth for tracking staffing budgets with respect to overall finances.
-Click One button to instantly line up a meeting with a qualified candidate.
+One-click to instantly line up a meeting with a qualified candidate.
 All you have to do is show up.
