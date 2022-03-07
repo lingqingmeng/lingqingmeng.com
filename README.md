@@ -151,3 +151,7 @@ Add pm2 and run with pm2 for production
 yarn add pm2
 pm2 serve public/ 80
 ```
+
+# Troubleshooting
+
+* Remove hidden config file in home directory `rm -rf ~/.pm2`
