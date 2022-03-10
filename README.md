@@ -10,10 +10,31 @@ Landing page 2/2/2022
 |build static site|`gatsby build` |
 
 
+# Pre-req
+
+## Developer System Dependencies
+
+If on Mac
+
+```zsh
+npm install --global yarn
+```
+
 
 
 
 ## Pre-req
+
+
+## Install yarn on cloud instances
+
+```bash
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+sudo apt-get install libpng-dev
+```
+
 
 ## Ensure access
 
@@ -97,6 +118,8 @@ Will be needed.
 npm install -g gatsby-cli
 ```
 
+> PROTIP: Don't forget to run `gatsby telemetry --disable` afterwards
+
 ### On a Macbook Pro
 
 If you haven't ran the code in a while
@@ -147,3 +170,7 @@ Add pm2 and run with pm2 for production
 yarn add pm2
 pm2 serve public/ 80
 ```
+
+# Troubleshooting
+
+* Remove hidden config file in home directory `rm -rf ~/.pm2`
