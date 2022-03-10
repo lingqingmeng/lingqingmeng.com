@@ -4,7 +4,7 @@ import ScrollReveal from 'scrollreveal';
 import { srConfig, email } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const ContactContainer = styled(Section)`
   text-align: center;
@@ -16,7 +16,7 @@ const ContactContainer = styled(Section)`
 `;
 const GreenHeading = styled(Heading)`
   display: block;
-  color: ${colors.green};
+  color: ${colors_option_b.green};
   font-size: ${fontSizes.medium};
   font-family: ${fonts.SFMono};
   font-weight: normal;
@@ -66,7 +66,7 @@ class Contact extends Component {
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         <EmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
-          Say Hello
+          Request a Quote
         </EmailLink>
       </ContactContainer>
     );

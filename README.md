@@ -1,5 +1,9 @@
 # ondecentral.com
 
+
+Landing page 2/2/2022
+
+
 | | |
 |-|-|
 |start gatsby dev server|`gatsby develop`|
@@ -19,6 +23,9 @@ npm install --global yarn
 
 
 
+## Pre-req
+
+
 ## Install yarn on cloud instances
 
 ```bash
@@ -27,6 +34,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install yarn
 sudo apt-get install libpng-dev
 ```
+
 
 ## Ensure access
 
@@ -37,7 +45,7 @@ On the command line in `~`, create a directory for global installations:
 ```bash
 mkdir ~/.npm-global
 ```
-   
+
 Config npm to use the new dir path:
 
 `npm config set prefix '~/.npm-global'`
@@ -55,7 +63,6 @@ On the command line update those system variables:
 `source ~/.profile`
 
 Test your new config by installing a package globally without using sudo
-
 
 ## Common pain points
 
@@ -152,6 +159,10 @@ yarn start
 ```zsh
 http-server public/ -p 7000
 ```
+
+Add pm2 and run with pm2 for production
+
+
 
 Add pm2 and run with pm2 for production
 

@@ -1,18 +1,16 @@
 module.exports = {
-  siteTitle: 'Ling Qing Meng | Speaker, Engineer, Entrepreneur',
-  siteDescription:
-    'Ling Qing Meng is an entrepreneur, investor and software engineer based in San Francisco, CA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
-  siteKeywords:
-    'Ling Qing Meng, Ling Qing, Meng, lingqingmeng, entrepreneur, software engineer, front-end engineer, blockchain engineer, nodejs, umn, rust',
-  siteUrl: 'https://lingqingmeng.com',
+  siteTitle: 'Pairing - Blockchain contract management platform',
+  siteDescription: '& the number one way to hire an engineer',
+  siteKeywords: 'substrate, polkadot, nodejs, rust',
+  siteUrl: 'https://ondecentral.com',
   siteLanguage: 'en_US',
   name: 'Ling Qing Meng',
   location: 'San Francisco, CA',
-  email: 'contact@lingqingmeng.com',
+  email: 'contact@ondecentral.com',
   socialMedia: [
     {
       name: 'Github',
-      url: 'https://github.com/lingqingmeng/',
+      url: 'https://github.com/decentral-foundation/',
     },
     {
       name: 'Linkedin',
@@ -20,7 +18,7 @@ module.exports = {
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/lingqingmeng/',
+      url: 'https://codepen.io/',
     },
     {
       name: 'Instagram',
@@ -28,7 +26,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/lingqingmeng',
+      url: 'https://twitter.com/lingqingm',
     },
   ],
 
@@ -54,12 +52,14 @@ module.exports = {
   twitterHandle: '@lingqingmeng',
   googleAnalyticsID: 'UA-37317196-4',
 
-  googleVerificatino: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
+  googleVerification: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
   headerHeight: 100,
 
-  greenColor: '#64ffda',
-  navyColor: '#0a192f',
-  darkNavyColor: '#020c1b',
+  greenColor: '#e8804d',
+  navyColor: '#1f1d1d',
+  darkNavyColor: '#f7f0eb',
+  armColor: '#a2466c',
+  eeColor: '#f7f0eb',
 
   srConfig: (delay = 200) => {
     return {

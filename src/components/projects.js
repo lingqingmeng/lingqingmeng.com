@@ -6,7 +6,7 @@ import { srConfig } from '../config';
 import { IconGithub, IconExternal, IconFolder } from './icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Button } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const ProjectsContainer = styled(Section)`
   ${mixins.flexCenter};
@@ -39,7 +39,7 @@ const ProjectInner = styled.div`
   height: 100%;
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-  background-color: ${colors.lightNavy};
+  background-color: ${colors_option_b.shadowNavy};
 `;
 const Project = styled.div`
   transition: ${theme.transition};
@@ -48,8 +48,9 @@ const Project = styled.div`
     outline: 0;
     ${ProjectInner} {
       transform: translateY(-5px);
-      box-shadow: 0 2px 4px ${colors.shadowNavy};
-      box-shadow: 0 19px 38px ${colors.darkestNavy} 0 15px 12px ${colors.shadowNavy};
+      box-shadow: 0 2px 4px ${colors_option_b.shadowNavy};
+      box-shadow: 0 19px 38px ${colors_option_b.darkestNavy} 0 15px 12px
+        ${colors_option_b.shadowNavy};
     }
   }
 `;
@@ -59,7 +60,7 @@ const ProjectHeader = styled.div`
   margin-bottom: 30px;
 `;
 const Folder = styled.div`
-  color: ${colors.green};
+  color: ${colors_option_b.red};
   svg {
     width: 40px;
     height: 40px;
@@ -67,7 +68,7 @@ const Folder = styled.div`
 `;
 const Links = styled.div`
   margin-right: -10px;
-  color: ${colors.lightSlate};
+  color: ${colors_option_b.lightSlate};
 `;
 const IconLink = styled.a`
   padding: 10px;
@@ -79,7 +80,7 @@ const IconLink = styled.a`
 const ProjectName = styled.h5`
   margin: 0 0 10px;
   font-size: ${fontSizes.xxlarge};
-  color: ${colors.lightestSlate};
+  color: ${colors_option_b.lightestSlate};
 `;
 const ProjectDescription = styled.div`
   font-size: 17px;
@@ -96,7 +97,7 @@ const TechList = styled.ul`
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.xsmall};
-    color: ${colors.lightSlate};
+    color: ${colors_option_b.lightSlate};
     line-height: 1.75;
     margin-right: 15px;
     &:last-of-type {
@@ -140,7 +141,7 @@ class Projects extends Component {
 
     return (
       <ProjectsContainer>
-        <ProjectsTitle ref={el => (this.projects = el)}>Other Projects</ProjectsTitle>
+        <ProjectsTitle ref={el => (this.projects = el)}>Publications</ProjectsTitle>
         <ProjectsGrid>
           <TransitionGroup className="projects">
             {projectsToShow &&

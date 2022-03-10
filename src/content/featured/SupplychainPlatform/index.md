@@ -1,22 +1,20 @@
 ---
 date: '1'
-title: 'Blockchain Wallet'
+title: 'Follow compliance and investment protocol'
 cover: './folio.png'
-github: 'https://www.youtube.com/watch?v=kYOjvFf9w3A'
-external: 'https://fr8.network'
+github: 'https://github.com/ondecentral'
+external: 'https://apply.ondecentral.com'
 tech:
   - ECDSA
-  - Express
-  - React Redux
-  - React Native
-  - Redis
-  - 2FA
+  - MFA
+  - Accounting
+  - Payroll
 show: 'true'
 ---
 
-Lead Software Engineer developing a Mobile Wallet, Chrome Extension Light Client, Frontend CRM React Web App and Backend interfacing each client component into a complete software suite.  
-  
-Built a Queue based web worker automating KYC/AML for user registration/onboarding via Redis, Celery, Node and Sendgrid API.    
-  
-Implemented industry best practices for user privacy and security. Designed  inhouse 2 factor verification for Mobile Wallet and Chrome Extension Client. Encryption and Decryption methods utilized Elliptic Curve Cryptography.   
-  
+Most startups are utilizing only 10% of their network.
+Let's say you have 2 positions to fill.
+That could mean hundreds of hours of manual work each month.
+Or you could use our technology.
+Our product is a Machine learning hiring agent.
+It is the best way to hire a person for your team.

@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { email } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const HeroContainer = styled(Section)`
   ${mixins.flexCenter};
@@ -17,7 +17,7 @@ const HeroContainer = styled(Section)`
   }
 `;
 const Hi = styled.h1`
-  color: ${colors.green};
+  color: ${colors_option_b.white};
   margin: 0 0 20px 3px;
   font-size: ${fontSizes.medium};
   font-family: ${fonts.SFMono};
@@ -37,7 +37,7 @@ const Name = styled.h2`
 const Subtitle = styled.h3`
   font-size: 80px;
   line-height: 1.1;
-  color: ${colors.slate};
+  color: ${colors_option_b.vanillaSlate};
   ${media.desktop`font-size: 70px;`};
   ${media.tablet`font-size: 60px;`};
   ${media.phablet`font-size: 50px;`};
@@ -89,7 +89,7 @@ class Hero extends Component {
     );
     const five = () => (
       <div style={{ transitionDelay: '500ms' }}>
-        <EmailLink href={`mailto:${email}`}>Get In Touch</EmailLink>
+        <EmailLink href={`mailto:${email}`}>View Open Positions</EmailLink>
       </div>
     );
 

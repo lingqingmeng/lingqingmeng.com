@@ -6,19 +6,19 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import { throttle } from '../utils';
 import { headerHeight } from '../config';
-import resume from '../images/resume.pdf';
+import FormD from '../documents/FormD.pdf';
 import Menu from './menu';
 import { IconLogo } from './icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Nav } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const HeaderContainer = styled.header`
   ${mixins.flexBetween};
   position: fixed;
   top: 0;
   padding: 0px 50px;
-  background-color: ${colors.navy};
+  background-color: ${colors_option_b.navy};
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
@@ -28,7 +28,7 @@ const HeaderContainer = styled.header`
   height: ${props =>
     props.scrollDirection === 'none' ? theme.headerHeight : theme.headerScrollHeight};
   box-shadow: ${props =>
-    props.scrollDirection === 'up' ? `0 2px 4px ${colors.shadowNavy}` : 'none'};
+    props.scrollDirection === 'up' ? `0 2px 4px ${colors_option_b.shadowNavy}` : 'none'};
   transform: translateY(
     ${props => (props.scrollDirection === 'down' ? `-${theme.headerScrollHeight}` : '0px')}
   );
@@ -38,7 +38,7 @@ const HeaderContainer = styled.header`
 const Navbar = styled(Nav)`
   ${mixins.flexBetween};
   font-family: ${fonts.SFMono};
-  color: ${colors.lightestSlate};
+  color: ${colors_option_b.lightestSlate};
   counter-reset: item 0;
   position: relative;
   z-index: 12;
@@ -47,13 +47,13 @@ const Logo = styled.div`
   ${mixins.flexCenter};
 `;
 const LogoLink = styled(Link)`
-  color: ${colors.green};
+  color: ${colors_option_b.yellow};
   width: 42px;
   height: 42px;
   &:hover,
   &:focus {
     svg {
-      fill: ${colors.transGreen};
+      fill: ${colors_option_b.yellow};
     }
   }
   svg {
@@ -85,7 +85,7 @@ const HamburgerBox = styled.div`
   height: 24px;
 `;
 const HamburgerInner = styled.div`
-  background-color: ${colors.green};
+  background-color: ${colors_option_b.white};
   position: absolute;
   width: ${theme.hamburgerWidth}px;
   height: 2px;
@@ -104,7 +104,7 @@ const HamburgerInner = styled.div`
   &:after {
     content: '';
     display: block;
-    background-color: ${colors.green};
+    background-color: ${colors_option_b.white};
     position: absolute;
     left: auto;
     right: 0;
@@ -146,7 +146,7 @@ const NavListItem = styled.li`
   &:before {
     content: '0' counter(item) '.';
     text-align: right;
-    color: ${colors.green};
+    color: ${colors_option_b.offWhite};
     font-size: ${fontSizes.xsmall};
   }
 `;
@@ -301,8 +301,8 @@ class Header extends Component {
               {isMounted && (
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
-                    <ResumeLink href={resume} target="_blank" rel="nofollow noopener noreferrer">
-                      W3F Grant
+                    <ResumeLink href={FormD} target="_blank" rel="nofollow noopener noreferrer">
+                      Investors
                     </ResumeLink>
                   </div>
                 </CSSTransition>

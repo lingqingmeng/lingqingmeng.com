@@ -5,7 +5,7 @@ const IconLoader = () => (
     <title>Loader Logo</title>
     <g>
       <path
-        stroke="#64FFDA"
+        stroke="#f0eae6"
         strokeWidth="5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -16,13 +16,20 @@ const IconLoader = () => (
                   L 89, 73
                   L 89, 28 z"
       />
-     <g id="B" transform="translate(11.000000, 5.000000)" fill="#64FFDA">
-            <g id="LM">
-                <text id="LM" fill="#64FFDA" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="39" font-weight="bold">
-                    <tspan x="13" y="58">LM</tspan>
-                </text>
-            </g>
+      <g id="B" transform="translate(25.000000, 5.000000)" fill="#f0eae6">
+        <g id="P">
+          <text
+            id="P"
+            fill="#f0eae6"
+            fontFamily="AppleSDGothicNeo-Bold, Apple SD Gothic Neo"
+            fontSize="39"
+            fontWeight="bold">
+            <tspan x="13" y="58">
+              P
+            </tspan>
+          </text>
         </g>
+      </g>
     </g>
   </svg>
 );

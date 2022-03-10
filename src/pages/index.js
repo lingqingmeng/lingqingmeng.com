@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import About from '../components/about';
-import Jobs from '../components/jobs';
+import Product from '../components/product';
 import Featured from '../components/featured';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
@@ -23,7 +23,7 @@ const IndexPage = ({ data, location }) => (
     <MainContainer id="content">
       <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
-      <Jobs data={data.jobs.edges} />
+      <Product data={data.product.edges} />
       <Featured data={data.featured.edges} />
       <Projects data={data.projects.edges} />
       <Contact data={data.contact.edges} />
@@ -65,14 +65,14 @@ export const query = graphql`
                 }
               }
             }
-            skills
+            integrations
           }
           html
         }
       }
     }
-    jobs: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/jobs/" } }
+    product: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/product/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
