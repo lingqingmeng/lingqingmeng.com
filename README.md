@@ -105,6 +105,8 @@ Will be needed.
 npm install -g gatsby-cli
 ```
 
+> PROTIP: Don't forget to run `gatsby telemetry --disable` afterwards
+
 ### On a Macbook Pro
 
 If you haven't ran the code in a while
