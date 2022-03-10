@@ -6,12 +6,18 @@
 |build static site|`gatsby build` |
 
 
+# Pre-req
+
+## Developer System Dependencies
+
+If on Mac
+
+```zsh
+npm install --global yarn
+```
 
 
 
-
-
-## Pre-req
 
 ## Install yarn on cloud instances
 
