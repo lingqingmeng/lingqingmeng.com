@@ -8,7 +8,7 @@ tech:
   - Starkware
   - Iron Mountain
   - Pairing
-show: 'false'
+show: 'true'
 ---
 
 Lorem Ipsum
