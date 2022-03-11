@@ -11,8 +11,13 @@ tech:
 show: 'true'
 ---
 
-In Parallel. Drive sales across all community members.
+In parallel.<br/><br/>
 
-Build long term relationships with investors by creating personalized messages that build trust.
+Drive sales across your community.<br/>
+
+Build long term relationships with investors<br/><br/>
+
+Create personalized messages<br/>
+that build trust.<br/><br/>
 
 Demo at ETH SF with ZK-Starks, viewable on [Youtube](https://youtu.be/-RvbNYu_Eo4)

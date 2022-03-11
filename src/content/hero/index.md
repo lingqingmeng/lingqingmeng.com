@@ -1,5 +1,5 @@
 ---
-title: 'Stop fundraising and start building'
+title: 'Protection with industry leading security.'
 name: 'Provide logistics for growth of web3 in emerging markets'
 subtitle: 'Close your next fundraising round with a quarter of the effort'
 contactText: 'Sign up today'

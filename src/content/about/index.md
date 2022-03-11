@@ -31,5 +31,3 @@ We are building 3 primary components:
 1. Automate processes to minimize opex
 2. Custodianship
 3. Exchange rate volatility
-
-Protection with industry leading security.

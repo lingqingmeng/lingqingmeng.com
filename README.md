@@ -1,17 +1,11 @@
 # ondecentral.com
 
-
 Landing page 2/2/2022
 
-
-| | |
-|-|-|
-|start gatsby dev server|`gatsby develop`|
-|build static site|`gatsby build` |
-
-
-
-
+|                         |                  |
+| ----------------------- | ---------------- |
+| start gatsby dev server | `gatsby develop` |
+| build static site       | `gatsby build`   |
 
 ## Pre-req
 
@@ -139,11 +133,13 @@ http-server public/ -p 7000
 
 Add pm2 and run with pm2 for production
 
-
-
 Add pm2 and run with pm2 for production
 
 ```zsh
 yarn add pm2
 pm2 serve public/ 80
 ```
+
+# Troubleshooting
+
+`Issue when installing NPM module sharp`
