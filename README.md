@@ -162,10 +162,6 @@ http-server public/ -p 7000
 
 Add pm2 and run with pm2 for production
 
-
-
-Add pm2 and run with pm2 for production
-
 ```zsh
 yarn add pm2
 pm2 serve public/ 80
