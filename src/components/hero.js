@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { email } from '../config';
+import { openPositions } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
@@ -89,7 +89,7 @@ class Hero extends Component {
     );
     const five = () => (
       <div style={{ transitionDelay: '500ms' }}>
-        <EmailLink href={`mailto:${email}`}>View Open Positions</EmailLink>
+        <EmailLink href={`${openPositions}`}>View Open Positions</EmailLink>
       </div>
     );
 
