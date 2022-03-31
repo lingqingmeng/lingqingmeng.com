@@ -1,17 +1,57 @@
 ---
-date: '2018-11-19'
-title: 'Exclusive Hackathon for High Performance Individuals'
+date: '2022-1-19'
+title: 'Day One Mentality'
 image: ''
 github: 'https://medium.com/@decentral/summary-of-event-h-m-transparency-hack-in-l-a-19fe6ea4e14b'
 external: 'http://about.hm.com/en/media/news/general-news-2018/HM-group-Transparency-Hack.html'
 tech:
   - Starkware
+  - Culture
   - Iron Mountain
+  - Values
   - Pairing
 show: 'true'
 ---
 
-Lorem Ipsum
+# Creating a day 1 mentality
+
+This is for describing our company culture.
+
+We have a day one culture.
+
+It's all about the long term for us. The main purpose of a business is to create value for our shareholders. And among many other things, we do this fundamental aspect of building a business very well.
+Because of our emphasis on the long term, we make decisions and make tradeoffs that some may consider contrarian to what most startups in this space do.
+
+- We measure our progress and track obsessively
+- We stay committed to what we set out to do
+- When we promise something to our customers and to each other, we deliver it
+- When forced between rushing out features vs internal cybersecurity safeguards, we will prioritize based on current events and the safety of those on our team and those that work with us
+
+Our goal is to build in a way that doesn't overextend. That means we are very practical about our decision making, including the risk management framework used for each major decision.
+
+We abide by the two-pizza team framework. It fosters each individual taking great ownership of their workstream. Ownership mean accountability in every aspect of business. It allows the team to move as a cohesive unit. Each action is synchronized on all fronts.
+
+While designing the team this way, we unlock capabilities that allow us to compete at an elite level. This allows us to demonstrate Day 1 Mentality.
+
+Day 1 mentality is a stark contrast to Day 2 mentalities. A Day 1 firm is obsessed on making high accuracy and large volume decisions. In order to do this week after week, month after month, every day each employee must work beyond his or her comfort zone.
+
+In a letter to hsi shareholders, written by Jeff Bezos
+
+> Jeff, what does Day 2 look like?
+> That's a question I just got at our most recent all hands meeting. I've been reminding people that it's Day 1 for a couple of decades. I work in an Amazon building named Day 1, and when I moved buildings, I took the name with me. I spend time thinking about this topic.
+
+> Day 2 is stasis. Followed by irrelevance. Followed by excruciating, painful decline. Followed by death. And _that_ is why it is _always_ Day 1.
+> [Source](https://s2.q4cdn.com/299287126/files/doc_financials/annual/2016-Letter-to-Shareholders.pdf)
+
+## How do we implement Day 1 methodology?
+
+A signature trait of a Day 2 company is the ability to make many high quality decisions quickly _and accurately_. This is easier said than done. If you do the math, the executive branch of a Day 1 startup likely makes over 10,000 high quality decisions a month. That's over 320 high quality decisions a day.
+
+In order for this volume to occur, each member of the team must make these decisions with 75% of the information readily available, rather than 95% of the information needed to make a decision.
+
+The magic lies when you're able to make incorrect decisions yet you're able to minimize the cost (minimize the downside risk), you're able to absorb the losses and net positive momentum when averaged over the course of the week.
+
+Most important to developing that skill is the ability to look back objectively and identify what went wrong, and what you must do to improve next time you face that issue. While also being mindful of your weak spots or sticking points, where you frequently make a sloppy or junior mistake that causes you to mis-manage your deliverable.
 
 ![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00762_preview.jpeg)
 
