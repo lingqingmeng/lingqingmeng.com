@@ -1,14 +1,13 @@
 # ondecentral.com
 
-
 Landing page 2/2/2022
 
 
-| | |
-|-|-|
-|start gatsby dev server|`gatsby develop`|
-|build static site|`gatsby build` |
 
+|                         |                  |
+| ----------------------- | ---------------- |
+| start gatsby dev server | `gatsby develop` |
+| build static site       | `gatsby build`   |
 
 # Pre-req
 
@@ -19,7 +18,6 @@ If on Mac
 ```zsh
 npm install --global yarn
 ```
-
 
 
 
@@ -162,8 +160,6 @@ http-server public/ -p 7000
 
 Add pm2 and run with pm2 for production
 
-
-
 Add pm2 and run with pm2 for production
 
 ```zsh
@@ -173,4 +169,7 @@ pm2 serve public/ 80
 
 # Troubleshooting
 
+`Issue when installing NPM module sharp`
+
 * Remove hidden config file in home directory `rm -rf ~/.pm2`
+
