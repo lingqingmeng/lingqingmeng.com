@@ -158,9 +158,7 @@ yarn start
 http-server public/ -p 7000
 ```
 
-Add pm2 and run with pm2 for production
-
-Add pm2 and run with pm2 for production
+Add pm2 and run with `./pm2 list` to test prior to production start
 
 ```zsh
 yarn add pm2
