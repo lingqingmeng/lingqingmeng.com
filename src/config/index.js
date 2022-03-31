@@ -7,6 +7,7 @@ module.exports = {
   name: 'Ling Qing Meng',
   location: 'San Francisco, CA',
   email: 'contact@ondecentral.com',
+  openPositions: 'https://angel.co/company/decentralinc/jobs',
   socialMedia: [
     {
       name: 'Github',
@@ -37,7 +38,7 @@ module.exports = {
     },
     {
       name: 'Experience',
-      url: '#jobs',
+      url: '#product',
     },
     {
       name: 'Work',

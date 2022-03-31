@@ -1,6 +1,6 @@
 ---
 date: '2022-02-01'
-title: 'Histogram'
+title: 'Archetype'
 company: 'DevOps & QA'
 location: 'Oakland, CA'
 range: 'Plug and play directly from your product requirements document'

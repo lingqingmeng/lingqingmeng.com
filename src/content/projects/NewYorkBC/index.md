@@ -15,20 +15,16 @@ show: 'true'
 
 ### Overview
 
-A US based startup, commissioned to design an end-to-end digital identity solution that would enable customers to validate and share identity information. Traditionally this would involve sending ID documents and private keys over insecure channels (e.g. email) and expensive KYC and compliance processes. The client had a very tight timeframe for development.
+In this post, we aim to familiarize the reader with some tools to implement Zk-SNARKs on ethereum. Recently, a lot has been written on zero knowledge proofs, however even then the math behind zero knowledge proofs remains to be “cryptic” and hard to grasp. For an uninitiated reader, Introduction to zk-SNARKs and Quadratic Arithmetic Programs serve as excellent resources to start reading about Zk-SNARKs and this post will help the reader put them to practice while treating the math behind as a black box.
 
-### Answer
+**What does a general-purpose succinct ZKP do?**
 
-Within a few months of using the product, the Secure ID Startup developed an end-to-end Software as a Service supporting KYC providers, issuers, 3rd party application developers, and end-users. Their team collaborated in real time on the product's browser interface by designing a backend for issuers allowing them to validate individual information and generate digital certificates. The team was able to check updates with a streamlined mobile interface that gave them the most important information on each work item as they become completed. The backend relied on a hardware security module for digital signing of certificates.
+Suppose that you have a (public) `function C()`, a (private) input `x` and a (public) output `y`. You want to prove that you know an `x` such that `C(x) = y`, without revealing what `x` is. Furthermore, for the proof to be succinct, you want it to be verifiable much more quickly than computing `C()` itself.
 
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00559_preview.jpeg)
+A Zk-SNARKs computation needs to be initialized by a trusted party. This involves modifying the computation `C` into a circuit format and using a secret parameter _lambda_ to generate the proving and verifying keys that are used later. Following this, _lambda_ - also called the "waste" needs to be destroyed - otherwise it will enable an adversary to generate fake proofs of the knowledge. For this reason, the Zcash team - a fork of bitcoin that’s based on zK-SNARKs and lets one perform _shielded_ transactions conducted an elaborate ceremony to generate these keys. Zcash has optional _shielded_ transactions that let you transfer hidden amounts to hidden addresses.
 
-Our team then integrated the solution with different KYC providers enabling document recognition, and basic validation. The final solution supported a variety of IDs from over 190 countries. Then the team leveraged Decentral's available API end points that focused on digital identity wallet for iOS and Android devices. The wallets leveraged mobile phone secure element processors to sign all transactions in hardware ensuring high levels of security.
+Now, when a prover wishes to prove to they know an answer to the computation `C()`, they will generate a proof using the proving key, public inputs `x` and secret input `w`. When the verifier wants to verify that answer to the computation is indeed correct, they would verify the proof using the verifier key, public inputs `x` and proof.
 
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00698_preview.jpeg)
+There is a whole class of cryptographic/security systems which rely on what are called _"trapdoor functions"_. The idea is that they are functions which are generally easy to compute, but for which finding the inverse is very hard. One such example is the function that takes two integers and multiplies them together (something we can do very easily), versus the "inverse", which is a function that takes an integer and gives you proper factors (given `n`, two numbers `p` and `q` such that `pq=n` and `1 < p,q < n` ). Infact RSA derives its security from this trapdoor; difficulty of factoring integers that are the product of two large prime numbers. Multiplying these two numbers is easy, but determining the original prime factors is considered infeasible. Let's say you were able to break a large number being used in the RSA key and you want to prove that you possess knowledge of the factors of the key - without divulging the factors themselves. We will write code enable a participant to do so.
 
-The Customer's end user facing product also had additional restrictions for age and region. They reserved the right to withhold funds on accounts that violated the privacy policy. This aspect of the token was designed and tested fully prior to the main release, to meet those requirements without interfering core functionality.
-
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00474_preview.jpeg)
-
-From ongoing developments on the business and engineering front, a new engagement was initiated as we adapted to the shifting requirements. We made a key realization that a 3 party escrow contract was integral in the MVP product. The MVP App, a user interface that serves as a platform for predictions and market making. The Escrow facilitates deals between disjoint parties while still maintaining key criteria for access.
+First, we will setup zokrates on our local machine and run it as a docker container.

@@ -1,7 +1,7 @@
 ---
 date: '1'
-title: 'Follow compliance and investment protocol'
-cover: './folio.png'
+title: 'Your AI hiring agent'
+cover: './portfolio.jpeg'
 github: 'https://github.com/ondecentral'
 external: 'https://apply.ondecentral.com'
 tech:
@@ -12,9 +12,11 @@ tech:
 show: 'true'
 ---
 
-Most startups are utilizing only 10% of their network.
-Let's say you have 2 positions to fill.
-That could mean hundreds of hours of manual work each month.
-Or you could use our technology.
-Our product is a Machine learning hiring agent.
-It is the best way to hire a person for your team.
+#### Startups utilize
+
+_Only 10%_ of their network.<br/><br/>
+You have positions to fill.<br/>
+Hundreds of hours of manual work<br/>
+Or you could use our technology...<br/>
+A Machine learning hiring agent.<br/>
+The best way to hire a person for your team.
