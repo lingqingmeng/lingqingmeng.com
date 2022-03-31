@@ -171,3 +171,8 @@ pm2 serve public/ 80
 
 * Remove hidden config file in home directory `rm -rf ~/.pm2`
 
+
+`zsh: command not found: yarn`
+
+* Run `source ~/.profile`
+
