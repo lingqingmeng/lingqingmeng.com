@@ -2,8 +2,8 @@
 date: '2022-1-19'
 title: 'Day One Mentality'
 image: ''
-github: 'https://medium.com/@decentral/summary-of-event-h-m-transparency-hack-in-l-a-19fe6ea4e14b'
-external: 'http://about.hm.com/en/media/news/general-news-2018/HM-group-Transparency-Hack.html'
+github: 'https://github.com/decentral-inc/'
+external: 'https://decentral.medium.com/day-one-mentality-63af619645e6'
 tech:
   - Starkware
   - Culture
