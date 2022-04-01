@@ -54,8 +54,6 @@ The magic lies when you're able to make incorrect decisions yet you're able to m
 
 Most important to developing that skill is the ability to look back objectively and identify what went wrong, and what you must do to improve next time you face that issue. While also being mindful of your weak spots or sticking points, where you frequently make a sloppy or junior mistake that causes you to mis-manage your deliverable.
 
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00762_preview.jpeg)
-
 Secondly, agree to disagree. When bringing together a team of high performance individuals, you learn to manage your ego very well in these settings. As a leader or manager, you'll also have to learn how to manage other people's ego with class and formality, especially when it is in the best interest of the firm to do so.
 
 If you ever find yourself in a situation where it's too people going back and forth on a topic or decision without a reasonable outcome in sight: agree to disagree. This saves valuable time and energy. Often, the data justifying a decision takes time to appear. It is far more productive to agree to disagree than to burn bridges, especially when you may need to rely down the road on the person you're currently arguing with.
