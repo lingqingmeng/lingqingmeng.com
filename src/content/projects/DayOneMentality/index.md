@@ -19,7 +19,8 @@ This is for describing our company culture.
 
 We have a day one culture.
 
-It's all about the long term for us. The main purpose of a business is to create value for our shareholders. And among many other things, we do this fundamental aspect of building a business very well.
+Our firm aims for the best long term outcome. We build upon first principles.
+
 Because of our emphasis on the long term, we make decisions and make tradeoffs that some may consider contrarian to what most startups in this space do.
 
 - We measure our progress and track obsessively
@@ -33,7 +34,7 @@ We abide by the two-pizza team framework. It fosters each individual taking grea
 
 While designing the team this way, we unlock capabilities that allow us to compete at an elite level. This allows us to demonstrate Day 1 Mentality.
 
-Day 1 mentality is a stark contrast to Day 2 mentalities. A Day 1 firm is obsessed on making high accuracy and large volume decisions. In order to do this week after week, month after month, every day each employee must work beyond his or her comfort zone.
+Day 1 mentality is a stark contrast to Day 2 mentalities. A Day 1 firm is obsessed on making high accuracy and large volume decisions. In order to do this week after week, month after month, every day each employee must work beyond his or her comfort zone. The main purpose of a business is to create value for our shareholders. And among many other things, we do this fundamental aspect of building a business very well.
 
 In a letter to hsi shareholders, written by Jeff Bezos
 
@@ -55,6 +56,12 @@ Most important to developing that skill is the ability to look back objectively 
 
 ![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00762_preview.jpeg)
 
-Lorem Ipsum
+Secondly, agree to disagree. When bringing together a team of high performance individuals, you learn to manage your ego very well in these settings. As a leader or manager, you'll also have to learn how to manage other people's ego with class and formality, especially when it is in the best interest of the firm to do so.
 
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00496_preview.jpeg)
+If you ever find yourself in a situation where it's too people going back and forth on a topic or decision without a reasonable outcome in sight: agree to disagree. This saves valuable time and energy. Often, the data justifying a decision takes time to appear. It is far more productive to agree to disagree than to burn bridges, especially when you may need to rely down the road on the person you're currently arguing with.
+
+There's more, referencing back the original shareholder letter article
+
+> Fourth recognize true misalignment issues early and escalate them _immediately_. Sometimes teams have different objectives and fundamentally different views. No amount of discussion, no number of meetings will resolve that deep misalignment. Without escalation, the default dispute resolution mechanism for this scenario is exhaustion. Whoever has more stamina carries the decision.
+>
+> You've worn me down is an awful decision-making process. It's slow and de-energizing. Go for quick escalation instead -- it's better.

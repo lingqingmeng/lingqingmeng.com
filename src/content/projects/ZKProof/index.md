@@ -1,6 +1,6 @@
 ---
-date: '2016-11-16'
-title: 'Secure ID Tech Startup'
+date: '2019-11-16'
+title: 'ZK Proof Demo'
 image: ''
 github: 'https://medium.com/@decentral/new-york-goes-blockchain-ec1f04560124'
 external: 'https://www.youtube.com/watch?v=IvVbyLeSIRI'
