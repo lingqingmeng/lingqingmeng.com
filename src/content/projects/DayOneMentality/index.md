@@ -65,3 +65,9 @@ There's more, referencing back the original shareholder letter article
 > Fourth recognize true misalignment issues early and escalate them _immediately_. Sometimes teams have different objectives and fundamentally different views. No amount of discussion, no number of meetings will resolve that deep misalignment. Without escalation, the default dispute resolution mechanism for this scenario is exhaustion. Whoever has more stamina carries the decision.
 >
 > You've worn me down is an awful decision-making process. It's slow and de-energizing. Go for quick escalation instead -- it's better.
+
+I've seen organizations get split apart when this is the status quo. Society has changed. Too much social media means people no longer make decisions from their core - and instead converge to the status quo. The status quo is garbage.
+
+Real success is not defined by how many upvotes you get or how good you feel after virtue signaling. These behaviors creep into an organization, and when the individual becomes avoidant to these issues and let them infect the organization, you turn from a team of A-level performers to B. Then from B to C.
+
+My philosophy is as follows. As a person, you'll spend a lot of time at work. No matter what, you have to work at one job or another, so why not work at an organization you can proud of? Be able to take charge and mold your organization, face the challenging issues when they occur instead of brushing it under the rug. And that is exactly what I'm creating, a place where each person is inspired by the person beside them. Where together we create the difference we wish to see in the world.
