@@ -2,8 +2,8 @@
 date: '2019-03-11'
 title: 'About our Firm'
 image: ''
-github: 'https://github.com/decentral-inc'
-external: ''
+github: ''
+external: 'https://decentral.medium.com/about-our-firm-5791531c820'
 tech:
   - Rust
   - ZK Starks
@@ -14,9 +14,11 @@ show: 'true'
 
 Decentral is building an application protocol to define the future of security in blockchain technology by facilitating interoperability across all decentralized networks. We are a team of independent and collaborative thinkers, experts in our individual domains. Decentral is developing the next generation of standards and protocols which companies and individuals will rely on as the use of quantum computing becomes commonplace for blockchain technology.
 
-### Values
+![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00496_preview.jpeg)
 
-Values (will be baked into JD, about, team, career and other relevant pages):
+### Who we are
+
+Our values:
 
 - _Collaborative & Solutions-oriented._ We are made up of thinkers and problem solvers who function from intrinsic motivation and bias for action. <br/><br/>
 - _Robust in EQ & IQ._ We believe genius is at its finest when paired with empathy and thoughtfulness—and the composition of our team reflects this value.<br/><br/>
