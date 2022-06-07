@@ -15,8 +15,5 @@ show: 'true'
 #### Startups utilize
 
 _Only 10%_ of their network.<br/><br/>
-You have positions to fill.<br/>
 Hundreds of hours of manual work<br/>
 Or you could use our technology...<br/>
-A Machine learning hiring agent.<br/>
-The best way to hire a person for your team.
