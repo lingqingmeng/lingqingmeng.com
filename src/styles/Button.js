@@ -13,7 +13,9 @@ const Button = styled.button`
   text-decoration: none;
   cursor: pointer;
   transition: ${theme.transition};
-  padding: 18px 23px;
+  padding: 25px 25px;
+  margin-left: 30px;
+  margin-right: 30px;
 
   &:hover,
   &:focus,

@@ -2,7 +2,7 @@
 date: '2022-02-01'
 title: 'Tech Sales'
 company: 'SDR'
-location: 'Oakland, CA'
+location: 'San Francisco, CA'
 range: "This is a commission based role. We offer competitive commission for a best-in-class, certified product. Responsibilities: You will be responsible for prospecting, qualifying and creating sales opportunities for Chainalysis’ global sales teams. You will be dedicated to pursuing some of the largest and most recognized brands in the crypto and blockchain space. You will represent the front line of the company's sales and marketing efforts, playing an important role in growing the business by starting the sales process and helping set up the sales teams for success."
 url: 'https://ondecentral.com/'
 ---
