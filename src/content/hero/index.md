@@ -1,6 +1,6 @@
 ---
 title: 'Book an appointment with  Enterprise Sales today +1 (937) 794-7734'
-name: 'Protection with industry leading security.'
+name: 'Protection with industry leading security'
 subtitle: 'Minimize friction when financing your company'
 contactText: 'Sign up today'
 ---
