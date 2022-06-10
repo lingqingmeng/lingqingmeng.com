@@ -15,7 +15,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/lingqingmeng/',
+      url: 'https://www.linkedin.com/in/ling-qing-meng-6a2803214 ',
     },
     {
       name: 'Codepen',
@@ -37,11 +37,11 @@ module.exports = {
       url: '#about',
     },
     {
-      name: 'Experience',
+      name: 'Careers',
       url: '#product',
     },
     {
-      name: 'Work',
+      name: 'Case Studies',
       url: '#projects',
     },
     {

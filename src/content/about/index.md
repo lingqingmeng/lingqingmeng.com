@@ -12,22 +12,18 @@ integrations:
   - Node.js
 ---
 
-What we're building is the number one way to onboard stakeholders onto your project. We create convertible note templates for managing your company's cap table. This increases your brand presence.
+The number one way to onboard stakeholders onto your project. We turn a creator into a founder by creating a framework for their team and staff to sell more, sell at higher prices, and sell to an expanded global market. Create organization single sources of truth with the click of a button.
 
-Our company is creating a system for bringing onboard new talent for your brand or content creation platform
-
-Pairing enables businesses to reduce the lag time of hiring a new employee or onboarding a remote team member.
+Business leaders now must prioritize data protection, automation, and data driven decision making over old fashioned and outdated methodologies.
 
 ![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00630_preview.jpeg)
 
-### Product at a glance
+✓ Our platform handles the messy, complex cybersecurity nuances
 
-- Wallet for Options and Payroll
-- Contract management platform
-- Liquidity System
+✓ Essentials for startups - yet very cost-intensive
 
-We are building 3 primary components:
+#### Composed of 2 primary components
 
-1. Automate processes to minimize opex
-2. Custodianship
-3. Exchange rate volatility
+✓ Anyone will be able to sign up and generate a dedicated, self hosted data vault on our site for a flat monthly fee.
+
+✓ Use to accept blockchain transactions and e-commerce payments from their end users.

@@ -36,6 +36,8 @@ const Tab = styled.button`
   background-color: transparent;
   height: ${theme.tabHeight}px;
   padding: 0 20px 2px;
+  margin-left: 20px;
+  margin-right: 20px;
   transition: ${theme.transition};
   border-left: 2px solid ${colors_option_b.darkGrey};
   text-align: left;
@@ -66,6 +68,8 @@ const Highlighter = styled.span`
   position: absolute;
   top: 0;
   left: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   transition: ${theme.transition};
   transition-delay: 0.1s;
   z-index: 10;
@@ -78,8 +82,9 @@ const Highlighter = styled.span`
     height: 2px;
     top: auto;
     bottom: 0;
+    text-align: center;
     transform: translateX(
-      ${props => (props.activeTabId > 0 ? props.activeTabId * theme.tabWidth : 0)}px
+      ${props => (props.activeTabId > 0 ? props.activeTabId * (theme.tabWidth + 40) : 0)}px
     );
   `};
 `;
@@ -101,7 +106,7 @@ const TabContent = styled.div`
   position: ${props => (props.isActive ? 'relative' : 'absolute')};
   visibility: ${props => (props.isActive ? 'visible' : 'hidden')};
   transition: ${theme.transition};
-  transition-duration: ${props => (props.isActive ? '0.5s' : '0s')};
+  transition-duration: ${props => (props.isActive ? '0.25s' : '0s')};
   ul {
     padding: 0;
     margin: 0;
@@ -168,7 +173,7 @@ class Product extends Component {
 
     return (
       <ProductContainer id="product" ref={el => (this.product = el)}>
-        <Heading>Trust the Process</Heading>
+        <Heading>We're hiring</Heading>
         <TabsContainer>
           <Tabs role="tablist">
             {data &&
