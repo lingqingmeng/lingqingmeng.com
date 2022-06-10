@@ -1,7 +1,7 @@
 ---
-title: 'Protection with industry leading security.'
+title: 'Book an appointment with  Enterprise Sales today +1 (937) 794-7734'
 name: 'Issue equity and stock options seamlessly for your startup'
-subtitle: 'Close your next fundraising round with a quarter of the effort'
+subtitle: 'Protection with industry leading security.'
 contactText: 'Sign up today'
 ---
 
