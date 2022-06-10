@@ -4,7 +4,7 @@ title: 'Hybrid Role'
 company: 'Product Manager'
 location: 'New York, NY'
 range: "For this Hybrid role of Product Designer and Frontend Engineer, Decentral is seeking a talented individual who possesses infinite curiosity. You'll partner with our CTO to create groundbreaking technology. This is an incredible opportunity to make a meaningful impact on the future of the blockchain industry as a whole."
-url: 'https://ondecentral.com'
+url: 'https://angel.co/l/2xdiR4'
 ---
 
 #### Responsibilities
@@ -29,3 +29,7 @@ url: 'https://ondecentral.com'
 - P&L ownership
 - Product Lifecycle Management
 - Consumer insights, competitive landscape, need/gap analysis
+
+#### How to apply
+
+Submit an application on our [Angellist](https://angel.co/l/2xdiR4)

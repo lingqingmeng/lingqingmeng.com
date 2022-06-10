@@ -4,16 +4,16 @@ title: 'Tech Sales'
 company: 'SDR'
 location: 'San Francisco, CA'
 range: "This is a commission based role. We offer competitive commission for a best-in-class, certified product. Responsibilities: You will be responsible for prospecting, qualifying and creating sales opportunities for Chainalysis’ global sales teams. You will be dedicated to pursuing some of the largest and most recognized brands in the crypto and blockchain space. You will represent the front line of the company's sales and marketing efforts, playing an important role in growing the business by starting the sales process and helping set up the sales teams for success."
-url: 'https://ondecentral.com/'
+url: 'https://angel.co/l/2x2pa6'
 ---
 
-#### Responsibilities:
+#### Responsibilities
 
 - You will be responsible for prospecting, qualifying and creating sales opportunities for our global sales teams.
 - You will be dedicated to pursuing some of the largest and most recognized brands in the crypto and blockchain space.
 - You will represent the front line of the company's sales and marketing efforts, playing an important role in growing the business by starting the sales process and helping set up the sales teams for success.
 
-#### Requirements:
+#### Requirements
 
 - Versatile, result-oriented, and motivated to drive new business
 - Track record of over-achieving goals, in the classroom, playing field, or business
@@ -22,3 +22,7 @@ url: 'https://ondecentral.com/'
 - Analyze technology implementations and integrations to choose the best solution to effectively solve challenges
 - Develop scripts to automate routine tasks.
 - Create and support a productive and innovative team. This includes working with peers, managers, and teams.
+
+#### How to apply
+
+Submit an application on our [Angellist](https://angel.co/l/2x2pa6)

@@ -4,10 +4,10 @@ title: 'Blockchain Development'
 company: 'Backend Engineer'
 location: 'San Francisco, CA'
 range: 'Our company is filling a position for a full stack engineer who will be responsible for designing, implementing and supporting the application and interfaces to our blockchain infrastructure. This person will analyze the different design requirements in blockchain technology in a certain business model, build and launch our core platform. In line with this, you must have experience with the following requirements.'
-url: 'https://z.ondecentral.com'
+url: 'https://angel.co/l/2hSLaa'
 ---
 
-#### Requirements:
+#### Requirements
 
 - Develops role for automating production deployment of blockchain nodes for Polkadot, Bitcoin, Ethereum
 - Mobile development experience (either Android or iOS) a huge plus
@@ -15,7 +15,7 @@ url: 'https://z.ondecentral.com'
 - Experience of at least 3 years on AWS, experience with SSH, remote desktop, and provisioning linux servers with apt and snap package managers
 - Proficient in shell scripting, provisioning environments for a production environment that features both NodeJS and Rust
 
-#### Responsibilities:
+#### Responsibilities
 
 - Maintain and extend current client- and server-side applications responsible for integration and business logic
 - Be involved in the global blockchain community—work on implementing and integrating the latest improvement proposals
@@ -24,3 +24,7 @@ url: 'https://z.ondecentral.com'
 - Raise technical standards while achieving business goals
 - Can write easy and understandable documentation on a daily basis
 - Must be fluent in English: spoken, verbal and written
+
+#### How to apply
+
+Submit an application on our [Angellist](https://angel.co/l/2hSLaa)

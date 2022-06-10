@@ -4,7 +4,7 @@ title: 'Managing Director'
 company: 'Director of Finance'
 location: 'Santa Clara, CA'
 range: 'At Decentral, we don’t just build software. We innovate where we are recognized at the top of adjacent industries. Join the team that manifests the standards of excellence, and that does whatever it takes to realize that value. We want your unique experience and strengths to guide us to a better tomorrow. This role will report to the CFO'
-url: 'https://ondecentral.com/'
+url: 'https://angel.co/l/2wSc2L'
 ---
 
 #### Qualifications
@@ -24,3 +24,7 @@ url: 'https://ondecentral.com/'
 - Prepare and analyze daily cash positions for both local and international entities, ensuring adequate cash and liquidity is available to meet each entity's financial obligations
 - Strong leadership skills with demonstrable track record in building world elite taems, internal company processes, company culture that contributed to the organization's overall success
 - Experience with Microsoft and Google suite of office software products, along with visualization tools such as Airtable and Tableau
+
+#### How to apply
+
+Submit an application on our [Angellist](https://angel.co/l/2wSc2L)
