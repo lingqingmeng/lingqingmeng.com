@@ -1,7 +1,7 @@
 ---
 title: 'Protection with industry leading security.'
 name: 'Issue equity and stock options seamlessly for your startup'
-subtitle: 'Close your next fundraising round with a quarter of the effort'
+subtitle: 'Minimize friction when financing your company'
 contactText: 'Sign up today'
 ---
 
