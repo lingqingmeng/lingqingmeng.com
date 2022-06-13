@@ -4,7 +4,7 @@ title: 'Get In Touch'
 
 Get started with Pairing today.
 
-#### P: +1 (937) 794-1824
+#### P: +1 (614) 432-7605
 
 [Pairing 14 day free trial](build.ondecentral.com/free-trial)
 
