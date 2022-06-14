@@ -2,12 +2,24 @@
 
 Landing page 2/2/2022
 
-
-
 |                         |                  |
 | ----------------------- | ---------------- |
 | start gatsby dev server | `gatsby develop` |
 | build static site       | `gatsby build`   |
+
+# How to deploy
+
+On your local machine:
+
+```zsh
+gatsby build
+make deploy-site
+```
+
+Notes:
+
+- If you dont have `make` installed, 👉 [macOS](https://stackoverflow.com/questions/10265742/how-to-install-make-and-gcc-on-a-mac), [Windows](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows)
+- Before running `$ make deploy-site` , make sure you have access to the ssh server and you have the eys configured and the /public folder is built in your project
 
 # Pre-req
 
@@ -19,10 +31,7 @@ If on Mac
 npm install --global yarn
 ```
 
-
-
 ## Pre-req
-
 
 ## Install yarn on cloud instances
 
@@ -32,7 +41,6 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install yarn
 sudo apt-get install libpng-dev
 ```
-
 
 ## Ensure access
 
@@ -169,10 +177,8 @@ pm2 serve public/ 80
 
 `Issue when installing NPM module sharp`
 
-* Remove hidden config file in home directory `rm -rf ~/.pm2`
-
+- Remove hidden config file in home directory `rm -rf ~/.pm2`
 
 `zsh: command not found: yarn`
 
-* Run `source ~/.profile`
-
+- Run `source ~/.profile`
