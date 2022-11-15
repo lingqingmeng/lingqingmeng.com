@@ -31,8 +31,9 @@
     ]
   },
   "dependencies": {
-    "animejs": "^3.0.1",
     "@babel/core": "^7.4.5",
+    "@loadable/component": "^5.15.2",
+    "animejs": "^3.0.1",
     "core-js": "^2.6.5",
     "cwebp-bin": "^5.0.0",
     "gatsby": "^2.1.4",
@@ -77,5 +78,8 @@
     "lint-staged": "^8.1.4",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
+  },
+  "resolutions": {
+    "minipass": "2.7.0"
   }
 }

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import ScrollReveal from 'scrollreveal';
-import { srConfig } from '../config';
+// import ScrollReveal from 'scrollreveal';
+// import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
+// import Loadable from '@loadable/component';
+// const ScrollReveal = Loadable(() => import('scrollreveal'));
 
 const AboutContainer = styled(Section)`
   position: relative;
@@ -108,10 +110,10 @@ class About extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
   };
-
-  componentDidMount() {
-    ScrollReveal().reveal(this.about, srConfig());
-  }
+  //
+  // componentDidMount() {
+  //   ScrollReveal().reveal(this.about, srConfig());
+  // }
 
   render() {
     const { data } = this.props;

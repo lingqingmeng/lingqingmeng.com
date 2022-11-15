@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 // import ScrollReveal from 'scrollreveal';
 // import { srConfig } from '../config';
-import { IconGithub, IconExternal } from './icons';
+import { IconExternal } from './icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
@@ -193,7 +193,7 @@ const Project = styled.div`
   }
 `;
 
-class Featured extends Component {
+class Team extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
   };
@@ -213,18 +213,18 @@ class Featured extends Component {
     const featuredProjects = data.filter(({ node }) => node.frontmatter.show === 'true');
 
     return (
-      <FeaturedContainer id="projects">
-        <Heading ref={el => (this.featured = el)}>Start with a Team</Heading>
+      <FeaturedContainer id="team">
+        <Heading ref={el => (this.featured = el)}>Management Team</Heading>
         <FeaturedGrid>
           {featuredProjects &&
             featuredProjects.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { external, title, tech, github, cover } = frontmatter;
+              const { url: external, name: title, cover, role } = frontmatter;
 
               return (
                 <Project key={i} ref={el => (this.revealRefs[i] = el)}>
                   <ContentContainer>
-                    <FeaturedLabel>Feature</FeaturedLabel>
+                    <FeaturedLabel>{role}</FeaturedLabel>
                     <ProjectName>
                       {external ? (
                         <a
@@ -239,23 +239,8 @@ class Featured extends Component {
                       )}
                     </ProjectName>
                     <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
-                    {tech && (
-                      <TechList>
-                        {tech.map((tech, i) => (
-                          <li key={i}>{tech}</li>
-                        ))}
-                      </TechList>
-                    )}
+
                     <Links>
-                      {github && (
-                        <a
-                          href={github}
-                          target="_blank"
-                          rel="nofollow noopener noreferrer"
-                          aria-label="Github Link">
-                          <IconGithub />
-                        </a>
-                      )}
                       {external && (
                         <a
                           href={external}
@@ -280,4 +265,4 @@ class Featured extends Component {
   }
 }
 
-export default Featured;
+export default Team;

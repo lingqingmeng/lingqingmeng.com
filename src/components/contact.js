@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ScrollReveal from 'scrollreveal';
-import { srConfig, email } from '../config';
+// import ScrollReveal from 'scrollreveal';
+import { email } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
@@ -48,9 +48,9 @@ class Contact extends Component {
     data: PropTypes.array.isRequired,
   };
 
-  componentDidMount() {
-    ScrollReveal().reveal(this.contact, srConfig());
-  }
+  // componentDidMount() {
+  //   ScrollReveal().reveal(this.contact, srConfig());
+  // }
 
   render() {
     const { data } = this.props;
