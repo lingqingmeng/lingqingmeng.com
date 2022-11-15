@@ -175,6 +175,16 @@ pm2 serve public/ 80
 
 # Troubleshooting
 
+## If you are running OSX Ventura on Apple Silicon 
+
+Assumptions: you are using `yarn` and building locally
+
+And you are getting an issue with the npm package sharp
+
+The solution is contained here https://github.com/nuxt/image/issues/204
+
+## Other Builds
+
 `Issue when installing NPM module sharp`
 
 - Remove hidden config file in home directory `rm -rf ~/.pm2`
