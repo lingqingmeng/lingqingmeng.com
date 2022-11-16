@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 // import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
+import { srConfig } from '../config';
 const { colors_option_b, fontSizes, fonts } = theme;
 
 const ProductContainer = styled(Section)`
@@ -159,9 +160,11 @@ class Product extends Component {
     activeTabId: 0,
   };
 
-  // componentDidMount() {
-  //   ScrollReveal().reveal(this.product, srConfig());
-  // }
+  componentDidMount() {
+    import('scrollreveal').then(({ default: ScrollReveal }) => {
+      ScrollReveal().reveal(this.product, srConfig());
+    });
+  }
 
   isActive = id => this.state.activeTabId === id;
 

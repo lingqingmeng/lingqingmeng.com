@@ -3,8 +3,12 @@ name: 'Elijah Jeewon Park'
 role: 'Head of Compliance'
 show: 'true'
 cover: './elijah-park.png'
-url: 'https://angel.co/l/2x9rjF'
+url: ''
 ---
 
-Attended George Washington University Law school and Passed the New York Bar
-exam in July 2021. Works as a Regulatory Analyst at Centene Corporation
+Attended George Washington University Law school and Passed the New York Bar exam in July 2021.
+<br />
+<br />
+He ensures that the firm has all the necessary licenses <br /> in place and ensures our
+company falls within the <br /> existing regulatory framework
+to maximize the liquidity <br /> on our platform.

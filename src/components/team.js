@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import { IconExternal } from './icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
+import { srConfig } from '../config';
 const { colors_option_b, fontSizes, fonts } = theme;
 
 const FeaturedContainer = styled(Section)`
@@ -203,10 +204,12 @@ class Team extends Component {
     this.revealRefs = [];
   }
 
-  // componentDidMount() {
-  //   ScrollReveal().reveal(this.featured, srConfig());
-  //   this.revealRefs.forEach(ref => ScrollReveal().reveal(ref, srConfig()));
-  // }
+  componentDidMount() {
+    import('scrollreveal').then(({ default: ScrollReveal }) => {
+      ScrollReveal().reveal(this.featured, srConfig());
+      this.revealRefs.forEach(ref => ScrollReveal().reveal(ref, srConfig()));
+    });
+  }
 
   render() {
     const { data } = this.props;

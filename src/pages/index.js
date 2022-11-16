@@ -10,7 +10,6 @@ import Featured from '../components/featured';
 import Projects from '../components/projects';
 import Team from '../components/team';
 import Contact from '../components/contact';
-
 import styled from 'styled-components';
 import { mixins, Main } from '../styles';
 
