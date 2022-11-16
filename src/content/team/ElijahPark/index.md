@@ -1,18 +1,10 @@
 ---
 name: 'Elijah Jeewon Park'
-role: 'Legal Person'
+role: 'Head of Compliance'
 show: 'true'
-cover: './elijah-park.jpg'
+cover: './elijah-park.png'
 url: 'https://angel.co/l/2x9rjF'
 ---
 
-- Knowledge of Linux/UNIX systems and shell scripting.
-  <br />
-  <br />
-- Git and in general with version control.
-  <br />
-  <br />
-- A broad knowledge of algorithms, programming languages, and libraries.
-  <br />
-  <br />
-- Experience with cryptographic natives such as elliptic curve cryptography implementations to blockchain node environments.
+Attended George Washington University Law school and Passed the New York Bar
+exam in July 2021. Works as a Regulatory Analyst at Centene Corporation
