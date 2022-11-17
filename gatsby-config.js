@@ -72,9 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'lingqingmeng.com',
-        //protocol: siteAddress.protocol.slice(0, -1),
-        //hostname: siteAddress.hostname,
+        bucketName: 'www-stage-ondecentral-com',
       },
     },
   ],
