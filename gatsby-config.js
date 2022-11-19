@@ -1,5 +1,4 @@
 const config = require('./src/config');
-//const siteAddress = new URL("https://lingqingmeng.com");
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
