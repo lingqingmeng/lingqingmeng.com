@@ -72,8 +72,11 @@ Test your new config by installing a package globally without using sudo
 
 ## Common pain points
 
-Node gyp on mac  
+Node gyp on mac
 [Debug article](https://codeforgeek.com/make-failed-with-exit-code-2/)
+
+Node GYP Error on Apple Silicon Mac (Tried on M1 Mac)
+[Debug Article](https://github.com/nuxt/image/issues/204)
 
 ## Deploy Staging
 
@@ -163,7 +166,7 @@ yarn start
 ```
 
 ```zsh
-http-server public/ -p 7000
+npx http-server public/ -p 6000
 ```
 
 Add pm2 and run with `./pm2 list` to test prior to production start

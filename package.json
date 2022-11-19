@@ -31,13 +31,13 @@
     ]
   },
   "dependencies": {
-    "animejs": "^3.0.1",
     "@babel/core": "^7.4.5",
+    "animejs": "^3.0.1",
     "core-js": "^2.6.5",
     "cwebp-bin": "^5.0.0",
     "gatsby": "^2.1.4",
     "gatsby-image": "^2.0.29",
-    "gatsby-plugin-google-analytics": "^2.0.14",
+    "gatsby-plugin-google-gtag": "4.24.0",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-netlify": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.23",
@@ -77,5 +77,8 @@
     "lint-staged": "^8.1.4",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
+  },
+  "resolutions": {
+    "minipass": "2.7.0"
   }
 }

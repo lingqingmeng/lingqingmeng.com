@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ScrollReveal from 'scrollreveal';
-import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
+import { srConfig } from '../config';
 const { colors_option_b, fontSizes, fonts } = theme;
 
 const ProductContainer = styled(Section)`
@@ -160,7 +159,9 @@ class Product extends Component {
   };
 
   componentDidMount() {
-    ScrollReveal().reveal(this.product, srConfig());
+    import('scrollreveal').then(({ default: ScrollReveal }) => {
+      ScrollReveal().reveal(this.product, srConfig());
+    });
   }
 
   isActive = id => this.state.activeTabId === id;
