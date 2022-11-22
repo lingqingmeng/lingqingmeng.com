@@ -3,7 +3,7 @@ name: 'Elijah Jeewon Park'
 role: 'Head of Compliance'
 show: 'true'
 cover: './elijah-park.png'
-url: ''
+url: 'ondecentral.com'
 ---
 
 Attended George Washington University Law school and Passed the New York Bar exam in July 2021.
