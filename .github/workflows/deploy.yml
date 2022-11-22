@@ -25,4 +25,4 @@ jobs:
         uses: jonelantha/gatsby-s3-action@v1
         with:
           dest-s3-bucket: www-ondecentral-com
-          cloudfront-id-to-invalidate: E5VY5XQQ664ZA
+          cloudfront-id-to-invalidate: I5UBE3N25JV42
