@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Pairing - Blockchain contract management platform',
+  siteTitle: 'Founders Kit - Blockchain contract management platform',
   siteDescription: '& the number one way to hire an engineer',
   siteKeywords: 'substrate, polkadot, nodejs, rust',
   siteUrl: 'https://ondecentral.com',
