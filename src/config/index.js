@@ -50,8 +50,8 @@ module.exports = {
     },
   ],
 
-  twitterHandle: '@lingqingmeng',
-  googleAnalyticsID: 'UA-37317196-4',
+  twitterHandle: '@lingqingm',
+  googleAnalyticsID: 'G-9HMJ423VGZ',
 
   googleVerification: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
   headerHeight: 100,

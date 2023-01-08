@@ -2,7 +2,7 @@
 date: '3'
 title: 'Case Study: Natural language processing for contracts'
 cover: './zkstark.jpeg'
-github: 'https://github.com/decentral-inc/secret-voting'
+github: 'https://github.com/ondecentral'
 external: 'https://youtu.be/-RvbNYu_Eo4'
 tech:
   - ZK Snarks

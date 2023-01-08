@@ -123,11 +123,43 @@ const Xdiv = styled(ModalStyle)`
   }
 `;
 
+function toUrlEncoded(title) {
+  return title
+    .split(' ')
+    .map(word => word.toLowerCase())
+    .join('-');
+}
+
+// posts is postsToShow
+// @returns -1 if not found
+function findElement(posts, hash) {
+  const endpoint = hash.slice(1);
+  let index = 0;
+  const filtered = posts.filter(({ node }, i) => {
+    index = i;
+    return endpoint === node.frontmatter.endpoint;
+  });
+  if (typeof filtered === 'undefined') {
+    return [undefined, -1];
+  }
+  if (filtered.length === 1) {
+    return [filtered.pop(), index];
+  } else if (filtered.length === 0) {
+    return [undefined, -1];
+  }
+}
+
 class Projects extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
+    location: PropTypes.object,
   };
 
+  /**
+ * IndexPage.propTypes = {
+  data: PropTypes.object.isRequired,
+  location: PropTypes.object,
+};*/
   constructor(props) {
     super(props);
     this.revealRefs = [];
@@ -156,17 +188,50 @@ class Projects extends Component {
     const GRID_LIMIT = 6;
     const { showMore } = this.state;
     const { data } = this.props;
+    const { location } = this.props;
+    const { hash } = location;
+
     const projects = data.filter(({ node }) => node.frontmatter.show === 'true');
     const firstSix = projects.slice(0, GRID_LIMIT);
     const projectsToShow = showMore ? projects : firstSix;
+
+    // first we must lower case all the posts aka projects to show
+    const postsToShow = projectsToShow.map(({ node }) => {
+      const { frontmatter, html } = node;
+      const { github, external, title, tech } = frontmatter;
+      const endpoint = toUrlEncoded(title);
+      const newFrontmatter = {
+        github,
+        external,
+        title,
+        tech,
+        endpoint,
+      };
+      node = {
+        frontmatter: newFrontmatter,
+        html,
+      };
+      return { node };
+    });
+    // if there is a location like /#zk-proof-demo
+    const [found, postIndex] = findElement(postsToShow, hash);
+    // if not found can either do nothing or set the location hash back to empty string
+    // else if found turn state.showModal and at the same time identify the ele
+    if (found) {
+      // this.showModal(postIndex);
+      this.setState({ showMore: !this.state.showMore, ele: postIndex });
+      // this.state.showModal = true;
+      // this.state.ele = postIndex;
+    }
+
     return (
       <>
         <ProjectsContainer id={'publications'}>
           <ProjectsTitle ref={el => (this.projects = el)}>Publications</ProjectsTitle>
           <ProjectsGrid>
             <TransitionGroup className="projects">
-              {projectsToShow &&
-                projectsToShow.map(({ node }, i) => {
+              {postsToShow &&
+                postsToShow.map(({ node }, i) => {
                   const { frontmatter, html } = node;
                   const { github, external, title, tech } = frontmatter;
                   return (
@@ -177,6 +242,9 @@ class Projects extends Component {
                             className="align_right"
                             onClick={() => {
                               {
+                                const url = new URL(window.location);
+                                const { origin } = url;
+                                window.history.pushState({}, '', origin);
                                 this.showModal(i);
                               }
                             }}>
@@ -184,7 +252,7 @@ class Projects extends Component {
                           </button>
                           <ModalSt
                             dangerouslySetInnerHTML={{
-                              __html: projectsToShow[this.state.ele].node.html,
+                              __html: postsToShow[this.state.ele].node.html,
                             }}
                           />
                         </Xdiv>
@@ -207,6 +275,11 @@ class Projects extends Component {
                                 <Folder
                                   onClick={() => {
                                     {
+                                      window.history.pushState(
+                                        {},
+                                        '',
+                                        `#${postsToShow[i].node.frontmatter.endpoint}`,
+                                      );
                                       this.showModal(i);
                                     }
                                   }}>
@@ -249,6 +322,9 @@ class Projects extends Component {
                               <ProjectDescription
                                 onClick={() => {
                                   {
+                                    const url = new URL(window.location);
+                                    const { origin } = url;
+                                    window.history.pushState({}, '', origin);
                                     this.showModal(i);
                                   }
                                 }}
