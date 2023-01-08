@@ -10,6 +10,7 @@ import Footer from './Footer';
 import Heading from './Heading';
 import Button from './Button';
 import InlineLink from './InlineLink';
+import ModalStyle from './modal';
 
 export {
   theme,
@@ -24,4 +25,5 @@ export {
   Heading,
   Button,
   InlineLink,
+  ModalStyle,
 };
