@@ -134,18 +134,17 @@ function toUrlEncoded(title) {
 // @returns -1 if not found
 function findElement(posts, hash) {
   const endpoint = hash.slice(1);
-  let index = 0;
-  const filtered = posts.filter(({ node }, i) => {
-    index = i;
+  const filtered = posts.filter(({ node }) => {
     return endpoint === node.frontmatter.endpoint;
   });
   if (typeof filtered === 'undefined') {
-    return [undefined, -1];
+    return undefined;
   }
   if (filtered.length === 1) {
-    return [filtered.pop(), index];
+    const pop = filtered.pop();
+    return pop;
   } else if (filtered.length === 0) {
-    return [undefined, -1];
+    return undefined;
   }
 }
 
@@ -155,11 +154,6 @@ class Projects extends Component {
     location: PropTypes.object,
   };
 
-  /**
- * IndexPage.propTypes = {
-  data: PropTypes.object.isRequired,
-  location: PropTypes.object,
-};*/
   constructor(props) {
     super(props);
     this.revealRefs = [];
@@ -170,9 +164,56 @@ class Projects extends Component {
     showMore: false,
     showModal: false,
     ele: -1,
+    hasUrlMatch: false,
   };
 
   componentDidMount() {
+    const GRID_LIMIT = 6;
+    const { showMore } = this.state;
+    const { data } = this.props;
+    const projects = data.filter(({ node }) => node.frontmatter.show === 'true');
+
+    const { location } = this.props;
+    const { hash } = location;
+
+    // first we must lower case all the posts aka projects to show
+    const firstSix = projects.slice(0, GRID_LIMIT);
+    const projectsToShow = showMore ? projects : firstSix;
+    const postsToShow = projectsToShow.map(({ node }, curr_i) => {
+      const { frontmatter, html } = node;
+      const { github, external, title, tech } = frontmatter;
+      const endpoint = toUrlEncoded(title);
+      node = {
+        frontmatter: {
+          github,
+          external,
+          title,
+          tech,
+          endpoint,
+          curr_i,
+        },
+        html,
+      };
+      return { node };
+    });
+    // if there is a location like /#zk-proof-demo
+    const found = findElement(postsToShow, hash);
+    let postIndex;
+    if (hash === '#day-one-mentality') {
+      postIndex = 0; //find index
+    } else if (hash === '#zk-proof-demo') {
+      postIndex = 1; //find index
+    } else if (hash === '#about-our-firm') {
+      postIndex = 2; //find index
+    }
+
+    // if not found can either do nothing or set the location hash back to empty string
+    // else if found turn state.showModal and at the same time identify the ele
+
+    if (found) {
+      this.setHasUrlMatch(true, postIndex);
+    }
+
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       ScrollReveal().reveal(this.projects, srConfig());
       this.revealRefs.forEach((ref, i) => ScrollReveal().reveal(ref, srConfig(i * 100)));
@@ -184,45 +225,35 @@ class Projects extends Component {
     this.setState({ showModal: !this.state.showModal, ele: index });
   };
 
+  setHasUrlMatch = (value, ind) => {
+    this.setState({ hasUrlMatch: value, ele: ind });
+  };
+
   render() {
     const GRID_LIMIT = 6;
     const { showMore } = this.state;
     const { data } = this.props;
-    const { location } = this.props;
-    const { hash } = location;
 
     const projects = data.filter(({ node }) => node.frontmatter.show === 'true');
     const firstSix = projects.slice(0, GRID_LIMIT);
     const projectsToShow = showMore ? projects : firstSix;
-
-    // first we must lower case all the posts aka projects to show
-    const postsToShow = projectsToShow.map(({ node }) => {
+    const postsToShow = projectsToShow.map(({ node }, curr_i) => {
       const { frontmatter, html } = node;
       const { github, external, title, tech } = frontmatter;
       const endpoint = toUrlEncoded(title);
-      const newFrontmatter = {
-        github,
-        external,
-        title,
-        tech,
-        endpoint,
-      };
       node = {
-        frontmatter: newFrontmatter,
+        frontmatter: {
+          github,
+          external,
+          title,
+          tech,
+          endpoint,
+          curr_i,
+        },
         html,
       };
       return { node };
     });
-    // if there is a location like /#zk-proof-demo
-    const [found, postIndex] = findElement(postsToShow, hash);
-    // if not found can either do nothing or set the location hash back to empty string
-    // else if found turn state.showModal and at the same time identify the ele
-    if (found) {
-      // this.showModal(postIndex);
-      this.setState({ showMore: !this.state.showMore, ele: postIndex });
-      // this.state.showModal = true;
-      // this.state.ele = postIndex;
-    }
 
     return (
       <>
@@ -249,6 +280,27 @@ class Projects extends Component {
                               }
                             }}>
                             🅇
+                          </button>
+                          <ModalSt
+                            dangerouslySetInnerHTML={{
+                              __html: postsToShow[this.state.ele].node.html,
+                            }}
+                          />
+                        </Xdiv>
+                      ) : null}
+                      {this.state.hasUrlMatch ? (
+                        <Xdiv>
+                          <button
+                            className="align_right"
+                            onClick={() => {
+                              {
+                                const url = new URL(window.location);
+                                const { origin } = url;
+                                window.history.pushState({}, '', origin);
+                                this.setHasUrlMatch(false, -1);
+                              }
+                            }}>
+                            Y
                           </button>
                           <ModalSt
                             dangerouslySetInnerHTML={{
