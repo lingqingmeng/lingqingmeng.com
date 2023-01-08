@@ -118,6 +118,9 @@ const Xdiv = styled(ModalStyle)`
   padding-right: 30px;
   padding-left: 30px;
   margin: 100px auto 0;
+  button.align_right {
+    float: right;
+  }
 `;
 
 class Projects extends Component {
@@ -133,7 +136,7 @@ class Projects extends Component {
 
   state = {
     showMore: false,
-    shown: false,
+    showModal: false,
     ele: -1,
   };
 
@@ -146,7 +149,7 @@ class Projects extends Component {
 
   showMoreToggle = () => this.setState({ showMore: !this.state.showMore });
   showModal = index => {
-    this.setState({ shown: !this.state.shown, ele: index });
+    this.setState({ showModal: !this.state.showModal, ele: index });
   };
 
   render() {
@@ -156,7 +159,6 @@ class Projects extends Component {
     const projects = data.filter(({ node }) => node.frontmatter.show === 'true');
     const firstSix = projects.slice(0, GRID_LIMIT);
     const projectsToShow = showMore ? projects : firstSix;
-
     return (
       <>
         <ProjectsContainer id={'publications'}>
@@ -169,8 +171,17 @@ class Projects extends Component {
                   const { github, external, title, tech } = frontmatter;
                   return (
                     <>
-                      {this.state.shown ? (
+                      {this.state.showModal ? (
                         <Xdiv>
+                          <button
+                            className="align_right"
+                            onClick={() => {
+                              {
+                                this.showModal(i);
+                              }
+                            }}>
+                            🅇
+                          </button>
                           <ModalSt
                             dangerouslySetInnerHTML={{
                               __html: projectsToShow[this.state.ele].node.html,

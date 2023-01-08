@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ModalStyle = styled.div`
   position: fixed;
-  max-width: 50%;
+  max-width: 80%;
   height: 70%;
   left: 0;
   right: 0;
