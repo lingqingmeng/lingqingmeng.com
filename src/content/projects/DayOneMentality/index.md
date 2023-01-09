@@ -9,7 +9,7 @@ tech:
   - Culture
   - Iron Mountain
   - Values
-  - Pairing
+  - Founders Kit
 show: 'true'
 ---
 

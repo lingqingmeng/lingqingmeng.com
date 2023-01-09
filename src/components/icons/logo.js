@@ -7,22 +7,22 @@ const IconLogo = () => (
       <g transform="translate(11.000000, 5.000000)">
         <polygon
           id="Shape"
-          stroke="#e60e2b"
+          stroke="#5adb9f"
           points="39 0 0 22 0 67 39 90 78 68 78 23"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="10"
         />
-        <g id="B" fill="#e60e2b" transform="translate(25.000000, 5.000000)">
-          <g id="P">
+        <g id="B" fill="#5adb9f" transform="translate(25.000000, 5.000000)">
+          <g id="FK">
             <text
-              id="P"
-              fill="#e60e2b"
+              id="FK"
+              fill="#5adb9f"
               fontFamily="AppleSDGothicNeo-Bold, Apple SD Gothic Neo"
               fontSize="39"
               fontWeight="bold">
-              <tspan x="3" y="55">
-                P
+              <tspan x="-8" y="55">
+                FK
               </tspan>
             </text>
           </g>

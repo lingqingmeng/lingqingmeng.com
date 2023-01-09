@@ -17,15 +17,15 @@ const IconLoader = () => (
                   L 89, 28 z"
       />
       <g id="B" transform="translate(25.000000, 5.000000)" fill="#f0eae6">
-        <g id="P">
+        <g id="FK">
           <text
-            id="P"
+            id="FK"
             fill="#f0eae6"
             fontFamily="AppleSDGothicNeo-Bold, Apple SD Gothic Neo"
             fontSize="39"
             fontWeight="bold">
-            <tspan x="13" y="58">
-              P
+            <tspan x="3" y="58">
+              FK
             </tspan>
           </text>
         </g>

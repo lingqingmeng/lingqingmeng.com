@@ -12,9 +12,7 @@ show: 'true'
 
 ### Overview
 
-Decentral is building an application protocol to define the future of security in blockchain technology by facilitating interoperability across all decentralized networks. We are a team of independent and collaborative thinkers, experts in our individual domains. Decentral is developing the next generation of standards and protocols which companies and individuals will rely on as the use of quantum computing becomes commonplace for blockchain technology.
-
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00496_preview.jpeg)
+Founders Kit is building an application protocol to define the future of security in blockchain technology by facilitating interoperability across all decentralized networks. We are a team of independent and collaborative thinkers, experts in our individual domains. Decentral is developing the next generation of standards and protocols which companies and individuals will rely on as the use of quantum computing becomes commonplace for blockchain technology.
 
 ### Who we are
 
