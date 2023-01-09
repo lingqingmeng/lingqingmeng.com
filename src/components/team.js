@@ -211,14 +211,13 @@ class Team extends Component {
 
   render() {
     const { data } = this.props;
-    const featuredProjects = data.filter(({ node }) => node.frontmatter.show === 'true');
-
+    const featuredTeammate = data.filter(({ node }) => node.frontmatter.show === 'true');
     return (
       <FeaturedContainer id="team">
-        <Heading ref={el => (this.featured = el)}>Management Team</Heading>
+        <Heading ref={el => (this.featured = el)}>Featured Team Profiles</Heading>
         <FeaturedGrid>
-          {featuredProjects &&
-            featuredProjects.map(({ node }, i) => {
+          {featuredTeammate &&
+            featuredTeammate.map(({ node }, i) => {
               const { frontmatter, html } = node;
               const { url: external, name: title, cover, role } = frontmatter;
 

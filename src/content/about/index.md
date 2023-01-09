@@ -16,9 +16,7 @@ The number one way to onboard stakeholders onto your project. We turn a creator 
 
 Business leaders now must prioritize data protection, automation, and data driven decision making over old fashioned and outdated methodologies.
 
-![](https://s3-us-west-2.amazonaws.com/fireteam-alpha/https-decentral-solutions-cdn/DSC00630_preview.jpeg)
-
-✓ Our platform handles the messy, complex cybersecurity nuances
+✓ [Our platform](https://portal.founderskit.org) handles the messy, complex cybersecurity nuances
 
 ✓ Essentials for startups - yet very cost-intensive
 

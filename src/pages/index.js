@@ -25,7 +25,7 @@ const IndexPage = ({ data, location }) => {
         <About data={data.about.edges} />
         <Product data={data.product.edges} />
         <Featured data={data.featured.edges} />
-        <Projects data={data.projects.edges} />
+        <Projects data={data.projects.edges} location={location} />
         <Team data={data.team.edges} />
         <Contact data={data.contact.edges} />
       </MainContainer>

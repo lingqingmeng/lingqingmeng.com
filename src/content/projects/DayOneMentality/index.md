@@ -2,14 +2,14 @@
 date: '2022-1-19'
 title: 'Day One Mentality'
 image: ''
-github: 'https://github.com/decentral-inc/'
+github: 'https://github.com/ondecentral'
 external: 'https://decentral.medium.com/day-one-mentality-63af619645e6'
 tech:
   - Starkware
   - Culture
   - Iron Mountain
   - Values
-  - Pairing
+  - Founders Kit
 show: 'true'
 ---
 

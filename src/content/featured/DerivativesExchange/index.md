@@ -2,7 +2,7 @@
 date: '2'
 title: 'Case Study: Employee Options Platform'
 cover: './futures.jpeg'
-github: 'https://github.com/decentral-inc/'
+github: 'https://github.com/ondecentral/'
 external: 'https://pairing.ondecentral.net'
 tech:
   - Rust

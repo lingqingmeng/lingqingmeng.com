@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { openPositions } from '../config';
+import { webApp } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
@@ -35,7 +35,7 @@ const Name = styled.h2`
   ${media.phone`font-size: 40px;`};
 `;
 const Subtitle = styled.h3`
-  font-size: 80px;
+  font-size: 48px;
   line-height: 1.1;
   color: ${colors_option_b.vanillaSlate};
   ${media.desktop`font-size: 70px;`};
@@ -79,17 +79,17 @@ class Hero extends Component {
     const { isMounted } = this.state;
     const { frontmatter, html } = data[0].node;
 
-    const one = () => <Hi style={{ transitionDelay: '100ms' }}>{frontmatter.title}</Hi>;
-    const two = () => <Name style={{ transitionDelay: '200ms' }}>{frontmatter.name}.</Name>;
+    const one = () => <Hi style={{ transitionDelay: '50ms' }}>{frontmatter.title}</Hi>;
+    const two = () => <Name style={{ transitionDelay: '100ms' }}>{frontmatter.name}</Name>;
     const three = () => (
-      <Subtitle style={{ transitionDelay: '300ms' }}>{frontmatter.subtitle}</Subtitle>
+      <Subtitle style={{ transitionDelay: '150ms' }}>{frontmatter.subtitle}</Subtitle>
     );
     const four = () => (
-      <Blurb style={{ transitionDelay: '400ms' }} dangerouslySetInnerHTML={{ __html: html }} />
+      <Blurb style={{ transitionDelay: '200ms' }} dangerouslySetInnerHTML={{ __html: html }} />
     );
     const five = () => (
-      <div style={{ transitionDelay: '500ms' }}>
-        <EmailLink href={`${openPositions}`}>View Open Positions</EmailLink>
+      <div style={{ transitionDelay: '2500ms' }}>
+        <EmailLink href={`${webApp}`}>Launch The App</EmailLink>
       </div>
     );
 
