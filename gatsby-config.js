@@ -65,6 +65,7 @@ module.exports = {
         pluginConfig: {
           head: false,
           respectDNT: true, // Respect Do Not Track
+          delayOnRouteUpdate: 0,
         },
       },
     },
