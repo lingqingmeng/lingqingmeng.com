@@ -6,6 +6,16 @@ module.exports = {
     description: config.siteDescription,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['G-9HMJ423VGZ'],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
@@ -52,20 +62,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ['G-HFZ8KMRXTW'],
-        gtagConfig: {
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true, // Respect Do Not Track
-        },
       },
     },
     {
