@@ -161,7 +161,7 @@ class Projects extends Component {
   }
 
   state = {
-    showMore: false,
+    showMore: true,
     showModal: false,
     ele: -1,
     hasUrlMatch: false,
@@ -179,6 +179,7 @@ class Projects extends Component {
     // first we must lower case all the posts aka projects to show
     const firstSix = projects.slice(0, GRID_LIMIT);
     const projectsToShow = showMore ? projects : firstSix;
+
     const postsToShow = projectsToShow.map(({ node }, curr_i) => {
       const { frontmatter, html } = node;
       const { github, external, title, tech } = frontmatter;
@@ -196,15 +197,18 @@ class Projects extends Component {
       };
       return { node };
     });
+
     // if there is a location like /#zk-proof-demo
     const found = findElement(postsToShow, hash);
     let postIndex;
     if (hash === '#day-one-mentality') {
-      postIndex = 0; //find index
-    } else if (hash === '#zk-proof-demo') {
       postIndex = 1; //find index
+    } else if (hash === '#zk-proof-demo') {
+      postIndex = 3; //find index
     } else if (hash === '#about-our-firm') {
       postIndex = 2; //find index
+    } else if (hash === '#rspa-feature') {
+      postIndex = 0; //find index
     }
 
     // if not found can either do nothing or set the location hash back to empty string
