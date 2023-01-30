@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/lingqingmeng/',
+      url: 'https://www.linkedin.com/company/decentralinc/',
     },
     {
       name: 'Codepen',
