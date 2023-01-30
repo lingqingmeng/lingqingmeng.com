@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/ling-qing-meng-6a2803214 ',
+      url: 'https://www.linkedin.com/company/founderskit/',
     },
     {
       name: 'Codepen',
