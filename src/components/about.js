@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import ScrollReveal from 'scrollreveal';
 import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const AboutContainer = styled(Section)`
   position: relative;
@@ -35,12 +34,12 @@ const Skill = styled.li`
   padding-left: 20px;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smallish};
-  color: ${colors.slate};
+  color: ${colors_option_b.white};
   &:before {
     content: '▹';
     position: absolute;
     left: 0;
-    color: ${colors.green};
+    color: ${colors_option_b.lightestSlate};
     font-size: ${fontSizes.small};
     line-height: 12px;
   }
@@ -64,7 +63,7 @@ const AvatarContainer = styled.div`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
+  background-color: ${colors_option_b.lightestSlate};
   margin-left: -20px;
   &:hover,
   &:focus {
@@ -93,11 +92,11 @@ const AvatarContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${colors.navy};
+    background-color: ${colors_option_b.navy};
     mix-blend-mode: screen;
   }
   &:after {
-    border: 2px solid ${colors.green};
+    border: 2px solid ${colors_option_b.lightestSlate};
     top: 20px;
     left: 20px;
     z-index: -1;
@@ -110,7 +109,9 @@ class About extends Component {
   };
 
   componentDidMount() {
-    ScrollReveal().reveal(this.about, srConfig());
+    import('scrollreveal').then(({ default: ScrollReveal }) => {
+      ScrollReveal().reveal(this.about, srConfig());
+    });
   }
 
   render() {

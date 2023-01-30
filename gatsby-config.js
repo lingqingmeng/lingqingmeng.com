@@ -1,5 +1,4 @@
 const config = require('./src/config');
-//const siteAddress = new URL("https://lingqingmeng.com");
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -7,6 +6,16 @@ module.exports = {
     description: config.siteDescription,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['G-9HMJ423VGZ'],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
@@ -19,8 +28,8 @@ module.exports = {
         name: 'LingQingMeng',
         short_name: 'LingQingMeng',
         start_url: '/',
-        background_color: config.darkNavyColor,
-        theme_color: config.navyColor,
+        background_color: config.eeColor,
+        theme_color: config.armColor,
         display: 'minimal-ui',
         icon: 'src/images/logo.png',
       },
@@ -56,17 +65,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: config.googleAnalyticsID,
-      },
-    },
-    {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'lingqingmeng.com',
-        //protocol: siteAddress.protocol.slice(0, -1),
-        //hostname: siteAddress.hostname,
+        bucketName: 'www-stage-ondecentral-com',
       },
     },
   ],

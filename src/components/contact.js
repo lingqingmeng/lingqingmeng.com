@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ScrollReveal from 'scrollreveal';
-import { srConfig, email } from '../config';
+// import ScrollReveal from 'scrollreveal';
+import { email } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const ContactContainer = styled(Section)`
   text-align: center;
@@ -16,7 +16,7 @@ const ContactContainer = styled(Section)`
 `;
 const GreenHeading = styled(Heading)`
   display: block;
-  color: ${colors.green};
+  color: ${colors_option_b.green};
   font-size: ${fontSizes.medium};
   font-family: ${fonts.SFMono};
   font-weight: normal;
@@ -48,9 +48,9 @@ class Contact extends Component {
     data: PropTypes.array.isRequired,
   };
 
-  componentDidMount() {
-    ScrollReveal().reveal(this.contact, srConfig());
-  }
+  // componentDidMount() {
+  //   ScrollReveal().reveal(this.contact, srConfig());
+  // }
 
   render() {
     const { data } = this.props;
@@ -59,14 +59,14 @@ class Contact extends Component {
 
     return (
       <ContactContainer id="contact" ref={el => (this.contact = el)}>
-        <GreenHeading>What&apos;s Next?</GreenHeading>
+        <GreenHeading>Contact Us</GreenHeading>
 
         <Title>{title}</Title>
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         <EmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
-          Say Hello
+          Request a Quote
         </EmailLink>
       </ContactContainer>
     );

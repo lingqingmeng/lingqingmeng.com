@@ -4,14 +4,14 @@ import { socialMedia } from '../config';
 import { IconGithub, IconLinkedin, IconCodepen, IconInstagram, IconTwitter } from './icons';
 import styled from 'styled-components';
 import { theme, media } from '../styles';
-const { colors } = theme;
+const { colors_option_b } = theme;
 
 const SocialContainer = styled.div`
   width: 40px;
   position: fixed;
   bottom: 0;
   left: 40px;
-  color: ${colors.lightSlate};
+  color: ${colors_option_b.vanillaLightSlate};
   ${media.desktop`left: 25px;`};
   ${media.tablet`display: none;`};
 `;
@@ -25,7 +25,7 @@ const SocialItemList = styled.ul`
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: ${colors.lightSlate};
+    background-color: ${colors_option_b.vanillaLightSlate};
   }
 `;
 const SocialItem = styled.li`

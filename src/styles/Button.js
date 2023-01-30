@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import theme from './theme';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const Button = styled.button`
-  color: ${colors.green};
+  color: ${colors_option_b.red};
   background-color: transparent;
-  border: 1px solid ${colors.green};
+  border: 1px solid ${colors_option_b.red};
   border-radius: ${theme.borderRadius};
   font-size: ${fontSizes.smallish};
   font-family: ${fonts.SFMono};
@@ -13,12 +13,14 @@ const Button = styled.button`
   text-decoration: none;
   cursor: pointer;
   transition: ${theme.transition};
-  padding: 18px 23px;
+  padding: 25px 25px;
+  margin-left: 30px;
+  margin-right: 30px;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: ${colors.transGreen};
+    background-color: ${colors_option_b.yellow};
     outline: none;
   }
   &:after {

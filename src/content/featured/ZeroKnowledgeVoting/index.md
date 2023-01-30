@@ -1,16 +1,24 @@
 ---
 date: '3'
-title: 'Zero Knowledge Voting'
-cover: './zksnark.png'
-github: 'https://github.com/decentral-inc/secret-voting'
+title: 'Case Study: Natural language processing for contracts'
+cover: './zkstark.jpeg'
+github: 'https://github.com/ondecentral'
 external: 'https://youtu.be/-RvbNYu_Eo4'
 tech:
-  - Remix IDE
-  - Solidity
-  - Libsnark
-  - Golang
+  - ZK Snarks
+  - ZK Rollups
   - ECDSA
 show: 'true'
 ---
 
-Live Demo at ETH San Francisco on Zero Knowledge Voting, viewable at [Youtube](https://youtu.be/-RvbNYu_Eo4)
+Manage high touch conversations <br/>
+in parallel. Drive engagement across<br/>
+your community.<br/>
+<br/>
+Build long term relationships <br/>
+with investors. Create personalized <br/>
+messages. that build trust.<br/>
+<br/><br/>
+
+Demo at ETH SF with ZK-Starks, <br/>
+viewable on [Youtube](https://youtu.be/-RvbNYu_Eo4)

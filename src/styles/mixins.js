@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import theme from './theme';
 import media from './media';
-const { colors, fontSizes, fonts } = theme;
+const { colors_option_b, fontSizes, fonts } = theme;
 
 const mixins = {
   flexCenter: css`
@@ -31,7 +31,7 @@ const mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${colors.green};
+      color: ${colors_option_b.vanillaOffWhite};
       outline: 0;
     }
   `,
@@ -43,11 +43,11 @@ const mixins = {
     position: relative;
     transition: ${theme.transition};
     cursor: pointer;
-    color: ${colors.green};
+    color: ${colors_option_b.vanillaLeetcode};
     &:hover,
     &:focus,
     &:active {
-      color: ${colors.green};
+      color: ${colors_option_b.green};
       outline: 0;
       &:after {
         width: 100%;
@@ -60,15 +60,15 @@ const mixins = {
       height: 1px;
       position: relative;
       bottom: 0.37em;
-      background-color: ${colors.green};
+      background-color: ${colors_option_b.blueGrey};
       transition: ${theme.transition};
     }
   `,
 
   smallButton: css`
-    color: ${colors.green};
+    color: ${colors_option_b.leetcode};
     background-color: transparent;
-    border: 1px solid ${colors.green};
+    border: 1px solid ${colors_option_b.leetcode};
     border-radius: ${theme.borderRadius};
     padding: 12px 17px;
     font-size: ${fontSizes.smallish};
@@ -80,7 +80,7 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.transGreen};
+      background-color: ${colors_option_b.transGreen};
     }
     &:after {
       display: none !important;
@@ -88,9 +88,9 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: ${colors.green};
+    color: ${colors_option_b.leetcode};
     background-color: transparent;
-    border: 1px solid ${colors.green};
+    border: 1px solid ${colors_option_b.leetcode};
     border-radius: ${theme.borderRadius};
     padding: 18px 23px;
     font-size: ${fontSizes.small};
@@ -102,7 +102,7 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.transGreen};
+      background-color: ${colors_option_b.transGreen};
     }
     &:after {
       display: none !important;

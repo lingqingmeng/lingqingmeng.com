@@ -1,7 +1,7 @@
 ---
-title: 'About Me'
-avatar: './me.png'
-skills:
+title: 'What we are building'
+avatar: './main.jpeg'
+integrations:
   - Rust
   - Solidity
   - HTML & CSS & JS
@@ -12,8 +12,16 @@ skills:
   - Node.js
 ---
 
-Hello! I'm Ling Qing Meng, a software engineer based in Boston, MA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+The number one way to onboard stakeholders onto your project. We turn a creator into a founder by creating a framework for their team and staff to sell more, sell at higher prices, and sell to an expanded global market. Create organization single sources of truth with the click of a button.
 
-Shortly after graduating from [U of M](https://cse.umn.edu/), I moved to San Francisco to work as a Software Engineer specializing in distributed networks.
+Business leaders now must prioritize data protection, automation, and data driven decision making over old fashioned and outdated methodologies.
 
-Here's a few things I'm experienced with:
+✓ [Our platform](https://portal.founderskit.org) handles the messy, complex cybersecurity nuances
+
+✓ Essentials for startups - yet very cost-intensive
+
+#### Composed of 2 primary components
+
+✓ Anyone will be able to sign up and generate a dedicated, self hosted data vault on our site for a flat monthly fee.
+
+✓ Use to accept blockchain transactions and e-commerce payments from their end users.

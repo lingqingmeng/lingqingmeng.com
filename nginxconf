@@ -1,8 +1,7 @@
 server {
     listen 80 default_server;
+    server_name apply.ondecentral.com;
     listen [::]:80 default_server ipv6only=on;
-    server_name lingqingmeng.com  www.lingqingmeng.com;
-    return 301 https://lingqingmeng.com$request_uri;
 }
 
 
@@ -10,9 +9,9 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
     ssl on;
-    server_name lingqingmeng.com  www.lingqingmeng.com;
-    ssl_certificate /etc/nginx/ssl/lqmssl/www.lingqingmeng.com.app.chain.crt;
-    ssl_certificate_key /etc/nginx/ssl/lqmssl/lingqingmeng.com.app.key;
+    server_name apply.ondecentral.com;
+    ssl_certificate /etc/letsencrypt/live/apply.ondecentral.com.app.chain.crt;
+    ssl_certificate_key /etc/letsencrypt/live/apply.ondecentral.com.app.key;
 
     client_max_body_size 4G;
 
@@ -20,11 +19,11 @@ server {
     error_log /opt/venv/logs/nginx-error.log;
 
     location /static/ {
-        alias   /opt/venv/lingqingmeng/public/;
+        alias   /opt/venv/ondecentral/public/;
     }
 
     location /media/ {
-        alias   /opt/venv/lingqingmeng/public/;
+        alias   /opt/venv/ondecentral/public/;
     }
 
     location / {
@@ -36,6 +35,6 @@ server {
     # Error pages
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-        root /opt/venv/lingqingmeng/public/;
+        root /opt/venv/ondecentral/public/;
     }
 }

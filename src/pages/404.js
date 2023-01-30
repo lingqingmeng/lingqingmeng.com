@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import styled from 'styled-components';
 import { theme, mixins, media, Main } from '../styles';
-const { colors, fonts } = theme;
+const { colors_option_b, fonts } = theme;
 
 const MainContainer = styled(Main)`
   ${mixins.flexCenter};
@@ -11,7 +11,7 @@ const MainContainer = styled(Main)`
   height: 100vh !important;
 `;
 const Title = styled.h1`
-  color: ${colors.green};
+  color: ${colors_option_b.green};
   font-family: ${fonts.SFMono};
   font-size: 20vw;
   line-height: 1;
