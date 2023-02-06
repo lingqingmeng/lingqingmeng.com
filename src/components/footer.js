@@ -74,7 +74,7 @@ const Footer = () => (
         href="https://github.com/decentral-foundation/"
         target="_blank"
         rel="nofollow noopener noreferrer">
-        © 2022 Decentral Inc All Rights Reserved
+        © 2023 Decentral Holding Corporation All Rights Reserved
       </GithubLink>
     </Copy>
   </FooterContainer>
