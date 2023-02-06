@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconGithub, IconLinkedin, IconCodepen, IconInstagram, IconTwitter } from './icons';
+import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from './icons';
 import { socialMedia } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
@@ -57,8 +57,6 @@ const Footer = () => (
                   <IconGithub />
                 ) : name === 'Linkedin' ? (
                   <IconLinkedin />
-                ) : name === 'Codepen' ? (
-                  <IconCodepen />
                 ) : name === 'Instagram' ? (
                   <IconInstagram />
                 ) : name === 'Twitter' ? (
@@ -76,7 +74,7 @@ const Footer = () => (
         href="https://github.com/decentral-foundation/"
         target="_blank"
         rel="nofollow noopener noreferrer">
-        © 2022 Decentral Inc All Rights Reserved
+        © 2023 Decentral Holding Corporation All Rights Reserved
       </GithubLink>
     </Copy>
   </FooterContainer>

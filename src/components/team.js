@@ -240,7 +240,7 @@ class Team extends Component {
                     </ProjectName>
                     <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
 
-                    <Links>
+                    {/* <Links>
                       {external && (
                         <a
                           href={external}
@@ -250,7 +250,7 @@ class Team extends Component {
                           <IconExternal />
                         </a>
                       )}
-                    </Links>
+                    </Links> */}
                   </ContentContainer>
 
                   <ImgContainer>
