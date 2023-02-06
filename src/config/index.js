@@ -19,10 +19,6 @@ module.exports = {
       url: 'https://www.linkedin.com/company/founderskit/',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/',
-    },
-    {
       name: 'Instagram',
       url: 'https://www.instagram.com/lingqingmeng/',
     },
