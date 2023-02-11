@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
+import Layout from '../components/layout';
 import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading, Button } from '../styles';
@@ -44,7 +45,8 @@ class UserForm extends Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { data, location } = this.props;
+    console.log('in userform location: ', location);
     const { frontmatter, html } = data[0].node;
     const { title, firstname, lastname, email, company, industry } = frontmatter;
 
