@@ -1,28 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
-import Layout from '../components/layout';
-import { srConfig } from '../config';
 import styled from 'styled-components';
-import { theme, mixins, media, Section, Heading, Button } from '../styles';
-const { colors_option_b } = theme;
+import { theme, mixins, media } from '../styles';
+const { colors_option_b, fontSizes } = theme;
 
 const UserFormContainer = styled.main`
   position: relative;
-`;
-
-const FlexContainer = styled.div`
-  ${mixins.flexBetween};
-  align-items: flex-start;
-  ${media.tablet`display: block;`};
-`;
-const ContentContainer = styled.div`
-  width: 60%;
-  max-width: 480px;
-  ${media.tablet`width: 100%;`};
-  a {
-    ${mixins.inlineLink};
-  }
+  margin: 0 auto 100px;
+  padding: 150px 0;
 `;
 
 const Input = styled.input`
@@ -41,9 +26,11 @@ const Title = styled.h1`
   ${media.tablet`font-size: 40px;`};
 `;
 
-const SendButton = styled(Button)``;
-
-class InformationForm {}
+const ButtonLink = styled.a`
+  ${mixins.smallButton};
+  margin-left: 10px;
+  font-size: ${fontSizes.smallish};
+`;
 
 class UserForm extends Component {
   static propTypes = {
@@ -52,22 +39,44 @@ class UserForm extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   handleInputChange(k, event) {
-    this.setState = {
+    this.setState({
+      ...this.state,
       [k]: event.target.value,
-    };
+    });
   }
 
+  handleOnClick() {}
+
   render() {
-    const { data, location } = this.props;
-    const { frontmatter, html } = data[0].node;
+    const { data } = this.props;
+    const { frontmatter } = data[0].node;
     const { title, firstname, lastname, email, company, industry } = frontmatter;
 
     return (
       <UserFormContainer id="userform" ref={el => (this.userform = el)}>
         <Title>{title}</Title>
+        <h3>
+          {' '}
+          Startups need cashflow more than ever. They need to manage their back office more
+          effectively. Easier said than done.{' '}
+        </h3>
+        <h4>
+          {' '}
+          The status quo is that startups often get buried in the upkeep. They cannot scale nor
+          delegate quickly enough to reach operational scalability{' '}
+        </h4>
+        <h4>Download this One pager to learn about:</h4>
+        <br />
+        <h5>How to calculate options</h5>
+        <h5>How to find product market fit with the lowest possible budget</h5>
+        <h5>
+          How these methods have been used by industry incumbents and have been hid from the general
+          public
+        </h5>
 
         <form method="post" action="#TODO">
           <div>
@@ -126,9 +135,9 @@ class UserForm extends Component {
           </div>
 
           <div>
-            <SendButton>
-              <button type="submit">Access our One-Pager!</button>
-            </SendButton>
+            <ButtonLink onClick={e => this.handleOnClick(e)} rel="nofollow noopener noreferrer">
+              Access our One Pager!
+            </ButtonLink>
           </div>
         </form>
       </UserFormContainer>
