@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading, Button } from '../styles';
+const { colors_option_b } = theme;
 
 const UserFormContainer = styled.main`
   position: relative;
@@ -22,6 +23,15 @@ const ContentContainer = styled.div`
   a {
     ${mixins.inlineLink};
   }
+`;
+
+const Input = styled.input`
+  padding: 0.5em;
+  margin: 0.5em;
+  background: DarkSlateGrey;
+  color: ${colors_option_b.lightestSlate};
+  border: 2px solid palevioletred;
+  border-radius: 3px;
 `;
 
 const Title = styled.h1`
@@ -44,9 +54,14 @@ class UserForm extends Component {
     super(props);
   }
 
+  handleInputChange(k, event) {
+    this.setState = {
+      [k]: event.target.value,
+    };
+  }
+
   render() {
     const { data, location } = this.props;
-    console.log('in userform location: ', location);
     const { frontmatter, html } = data[0].node;
     const { title, firstname, lastname, email, company, industry } = frontmatter;
 
@@ -58,45 +73,55 @@ class UserForm extends Component {
           <div>
             <label>
               {firstname}
-              <div>
-                <input type="text" name="name" id="firstname" />
-              </div>
+              <Input
+                defaultValue=""
+                type="text"
+                onChange={e => this.handleInputChange('firstname', e)}
+              />
             </label>
           </div>
 
           <div>
             <label>
               {lastname}
-              <div>
-                <input type="text" name="name" id="lastname" />
-              </div>
+              <Input
+                defaultValue=""
+                type="text"
+                onChange={e => this.handleInputChange('lastname', e)}
+              />
             </label>
           </div>
 
           <div>
             <label>
               {company}
-              <div>
-                <input type="text" name="subject" id="subject" />
-              </div>
+              <Input
+                defaultValue=""
+                type="text"
+                onChange={e => this.handleInputChange('company', e)}
+              />
             </label>
           </div>
 
           <div>
             <label>
               {email}
-              <div>
-                <input type="email" name="email" id="emailaddress" />
-              </div>
+              <Input
+                defaultValue=""
+                type="text"
+                onChange={e => this.handleInputChange('email', e)}
+              />
             </label>
           </div>
 
           <div>
             <label>
               {industry}
-              <div>
-                <input type="text" name="subject" id="subject" />
-              </div>
+              <Input
+                defaultValue=""
+                type="text"
+                onChange={e => this.handleInputChange('industry', e)}
+              />
             </label>
           </div>
 

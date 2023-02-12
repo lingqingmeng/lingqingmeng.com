@@ -249,7 +249,6 @@ class Header extends Component {
   render() {
     const { scrollDirection, menuOpen, isMounted } = this.state;
     const { location, navLinks } = this.props;
-    console.log('navLinks: ', navLinks);
     const isHome = location && location.pathname === '/';
 
     return (
