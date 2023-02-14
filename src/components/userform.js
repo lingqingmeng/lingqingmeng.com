@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
@@ -49,7 +49,28 @@ class UserForm extends Component {
     });
   }
 
-  handleOnClick() {}
+  handleOnClick(){
+    const uform = userform.current;
+
+    const info = {
+      firstname: uform['firstname'].value,
+      lastname: uform['lastname'].value,
+      email: uform['email'].value,
+      company: uform['company'].value,
+      industry: uform['industry'].value,
+    };
+    
+    fetch('http://localhost:3000/marketing', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: new URLSearchParams(info)
+    })
+      .then(response => response.json())
+      .then(alert(`Thank you for contracting us, you will receive an email soon`))
+      .catch(error => console.error(error));
+  }
 
   render() {
     const { data } = this.props;
@@ -78,7 +99,7 @@ class UserForm extends Component {
           public
         </h5>
 
-        <form method="post" action="#TODO">
+        <form ref={userform}>
           <div>
             <label>
               {firstname}
@@ -86,8 +107,10 @@ class UserForm extends Component {
                 defaultValue=""
                 type="text"
                 onChange={e => this.handleInputChange('firstname', e)}
+                name={'firstname'}
               />
             </label>
+
           </div>
 
           <div>
@@ -97,6 +120,7 @@ class UserForm extends Component {
                 defaultValue=""
                 type="text"
                 onChange={e => this.handleInputChange('lastname', e)}
+                name={'lastname'}
               />
             </label>
           </div>
@@ -108,6 +132,7 @@ class UserForm extends Component {
                 defaultValue=""
                 type="text"
                 onChange={e => this.handleInputChange('company', e)}
+                name={'company'}
               />
             </label>
           </div>
@@ -119,6 +144,7 @@ class UserForm extends Component {
                 defaultValue=""
                 type="text"
                 onChange={e => this.handleInputChange('email', e)}
+                name={'email'}
               />
             </label>
           </div>
@@ -130,12 +156,13 @@ class UserForm extends Component {
                 defaultValue=""
                 type="text"
                 onChange={e => this.handleInputChange('industry', e)}
+                name={'industry'}
               />
             </label>
           </div>
 
           <div>
-            <ButtonLink onClick={e => this.handleOnClick(e)} rel="nofollow noopener noreferrer">
+            <ButtonLink onClick={e => this.handleOnClick(e)} get value rel="nofollow noopener noreferrer">
               Access our One Pager!
             </ButtonLink>
           </div>
