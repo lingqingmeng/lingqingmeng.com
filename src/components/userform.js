@@ -39,6 +39,7 @@ class UserForm extends Component {
 
   constructor(props) {
     super(props);
+    this.userform = React.createRef();
     this.state = {};
   }
 
@@ -50,7 +51,7 @@ class UserForm extends Component {
   }
 
   handleOnClick(){
-    const uform = userform.current;
+    const uform = this.userform.current;
 
     const info = {
       firstname: uform['firstname'].value,
@@ -68,7 +69,7 @@ class UserForm extends Component {
       body: new URLSearchParams(info)
     })
       .then(response => response.json())
-      .then(alert(`Thank you for contracting us, you will receive an email soon`))
+      .then(alert(`Thank you for contacting us, you will receive an email soon`))
       .catch(error => console.error(error));
   }
 
@@ -99,7 +100,7 @@ class UserForm extends Component {
           public
         </h5>
 
-        <form ref={userform}>
+        <form ref={this.userform}>
           <div>
             <label>
               {firstname}
@@ -162,7 +163,7 @@ class UserForm extends Component {
           </div>
 
           <div>
-            <ButtonLink onClick={e => this.handleOnClick(e)} get value rel="nofollow noopener noreferrer">
+            <ButtonLink onClick={e => this.handleOnClick(e)} href="#" rel="nofollow noopener noreferrer">
               Access our One Pager!
             </ButtonLink>
           </div>
