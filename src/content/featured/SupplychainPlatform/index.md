@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'Case Study: Infrastructure to power ML models'
 cover: './portfolio.jpeg'
 github: 'https://github.com/ondecentral'
