@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
 const { colors_option_b, fontSizes } = theme;
+import { API_URL } from '../../config'
 
 const UserFormContainer = styled.main`
   position: relative;
@@ -61,7 +62,7 @@ class UserForm extends Component {
       industry: uform['industry'].value,
     };
     
-    fetch('http://localhost:3000/marketing', {
+    fetch(API_URL + '/marketing', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
