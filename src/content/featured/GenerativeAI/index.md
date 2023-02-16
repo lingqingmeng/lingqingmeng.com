@@ -39,4 +39,5 @@ ChatGPT is requiring Google to evolve. In other words;<br/> if you can’t beat 
 Where do founders go from here?
 </span>
 <br/>
-As this technology develops, our businesses will have to evolve alongside it. We can only project how technologies such as generative AI will affect life as we know it and try our best to harness its benefits. What are some of the benefits you see from this? What are the pitfalls? Join the FoundersKit discussion board to see what professionals and new founders are saying about this: (link here)
+As this technology develops, our businesses will have to evolve alongside it. We can only project how technologies such as generative AI will affect life as we know it and try our best to harness its benefits. What are some of the benefits you see from this? What are the pitfalls? Join the <a href="https://forum.founderskit.org" style="color: red;" target="_blank">FoundersKit Forum</a>
+ discussion board to see what professionals and new founders are saying about this.
