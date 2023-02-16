@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '1'
 title: 'Case Study: Natural language processing for contracts'
 cover: './zkstark.jpeg'
 github: 'https://github.com/ondecentral'
