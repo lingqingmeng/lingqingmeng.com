@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '3'
 title: 'Generative AI and a ChatGPT Contender - How this Affects Your Business'
 cover: './zkstark.jpeg'
 tech:
@@ -7,6 +7,7 @@ tech:
   - ChatGPT
 show: 'true'
 ---
+
 <span style="font-weight:1000;font-size:20px">
 Generative AI (Artificial Intelligence) - What is it?
 </span>

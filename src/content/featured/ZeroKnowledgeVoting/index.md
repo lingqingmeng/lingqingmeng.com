@@ -8,7 +8,7 @@ tech:
   - ZK Snarks
   - ZK Rollups
   - ECDSA
-show: 'true'
+show: 'false'
 ---
 
 Manage high touch conversations <br/>

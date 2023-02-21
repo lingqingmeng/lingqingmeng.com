@@ -29,7 +29,7 @@ const ContentContainer = styled.div`
   ${media.phablet`padding: 30px 25px 20px;`};
 `;
 const FeaturedLabel = styled.h4`
-  font-size: ${fontSizes.smallish};
+  font-size: ${fontSizes.xsmall};
   font-weight: normal;
   color: ${colors_option_b.lightestSlate};
   font-family: ${fonts.SFMono};
