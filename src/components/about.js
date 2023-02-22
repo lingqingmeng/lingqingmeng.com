@@ -22,6 +22,14 @@ const ContentContainer = styled.div`
     ${mixins.inlineLink};
   }
 `;
+const Input = styled.input`
+  padding: 0.5em;
+  margin: 0.5em;
+  background: DarkSlateGrey;
+  color: ${colors_option_b.lightestSlate};
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+`;
 const SkillsContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -103,6 +111,12 @@ const AvatarContainer = styled.div`
   }
 `;
 
+const EmailLink = styled.a`
+  ${mixins.bigButton};
+  font-size: ${fontSizes.smallish};
+  margin-top: 50px;
+`;
+
 class About extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
@@ -135,6 +149,17 @@ class About extends Component {
             </AvatarContainer>
           </PicContainer>
         </FlexContainer>
+        <FlexContainer>
+          <div>
+            Do you feel overwhelmed with the lack of cash when launching a startup? Are you fed up
+            being stuck in your startup not getting the revenue numbers you need to close your next
+            round? This is the holy grail of finding product market fit: A must read for any startup
+          </div>
+        </FlexContainer>
+        <div style={{ transitionDelay: '2500ms' }}>
+          <Input defaultValue="@Email" type="text" />
+          <EmailLink href={`https://google.com`}>Submit The Form</EmailLink>
+        </div>
       </AboutContainer>
     );
   }

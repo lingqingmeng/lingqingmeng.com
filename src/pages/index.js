@@ -162,5 +162,19 @@ export const query = graphql`
         }
       }
     }
+    userform: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/userform/" } }) {
+      edges {
+        node {
+          frontmatter {
+            firstname
+            lastname
+            company
+            email
+            industry
+          }
+          html
+        }
+      }
+    }
   }
 `;

@@ -60,7 +60,6 @@ class Layout extends Component {
   render() {
     const { children, location } = this.props;
     const { isLoading } = this.state;
-
     return (
       <StaticQuery
         query={graphql`
