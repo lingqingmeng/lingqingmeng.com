@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '2'
 title: 'Case Study: Employee Options Platform'
 cover: './futures.jpeg'
 github: 'https://github.com/ondecentral/'
