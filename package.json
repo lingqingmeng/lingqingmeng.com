@@ -49,7 +49,7 @@
     "gatsby-plugin-styled-components": "^5.25.0",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^6.25.0",
-    "gatsby-source-filesystem": "^5.25.0",
+    "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^5.25.0",
     "http-server": "^14.1.0",
