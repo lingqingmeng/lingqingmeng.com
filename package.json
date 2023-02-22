@@ -42,7 +42,7 @@
     "gatsby-plugin-netlify": "^3.7.0",
     "gatsby-plugin-offline": "^5.1.0",
     "gatsby-plugin-react-helmet": "^5.2.0",
-    "gatsby-plugin-robots-txt": "^2.3.1",
+    "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-s3": "^2.3.3",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-plugin-sitemap": "^4.10.0",
