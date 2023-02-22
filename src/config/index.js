@@ -6,7 +6,7 @@ module.exports = {
   siteLanguage: 'en_US',
   name: 'Ling Qing Meng',
   location: 'San Francisco, CA',
-  email: 'info@ondecentral.com',
+  email: 'contact@ondecentral.com',
   openPositions: 'https://angel.co/company/decentralinc/jobs',
   webApp: 'https://portal.founderskit.org',
   socialMedia: [

@@ -6,6 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import { throttle } from '../utils';
 import { headerHeight } from '../config';
+import FormD from '../documents/FormD.pdf';
 import Menu from './menu';
 import { IconLogo } from './icons';
 import styled from 'styled-components';
@@ -248,8 +249,6 @@ class Header extends Component {
   render() {
     const { scrollDirection, menuOpen, isMounted } = this.state;
     const { location, navLinks } = this.props;
-    const { pathname } = location;
-    const isResource = pathname === '/MarketingUserForm'; // should use a better design pattern
     const isHome = location && location.pathname === '/';
 
     return (
@@ -299,11 +298,11 @@ class Header extends Component {
               </NavList>
             )}
             <TransitionGroup>
-              {isMounted && isResource && (
+              {isMounted && (
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
-                    <ResumeLink href={'/'} rel="nofollow noopener noreferrer">
-                      Main Page
+                    <ResumeLink href={FormD} target="_blank" rel="nofollow noopener noreferrer">
+                      Investors
                     </ResumeLink>
                   </div>
                 </CSSTransition>
