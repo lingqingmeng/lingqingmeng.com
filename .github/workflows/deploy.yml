@@ -9,6 +9,7 @@ jobs:
   Create-Production-Build:
     runs-on: ubuntu-latest
     steps:
+      - name: Use legacy ssl until we upgrade dependencies
       - name: Checkout
         uses: actions/checkout@v3
       - name: Installing Dependencies
