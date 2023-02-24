@@ -1,9 +1,9 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
 const { colors_option_b, fontSizes } = theme;
-import { API_URL } from '../../config'
+//import { API_URL } from '../../config';
 
 const UserFormContainer = styled.main`
   position: relative;
@@ -51,7 +51,7 @@ class UserForm extends Component {
     });
   }
 
-  handleOnClick(){
+  handleOnClick() {
     const uform = this.userform.current;
 
     const info = {
@@ -61,17 +61,20 @@ class UserForm extends Component {
       company: uform['company'].value,
       industry: uform['industry'].value,
     };
-    
-    fetch(API_URL + '/marketing', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: new URLSearchParams(info)
-    })
-      .then(response => response.json())
-      .then(alert(`Thank you for contacting us, you will receive an email soon`))
-      .catch(error => console.error(error));
+    try {
+      fetch('https://api.stage.founderstable.xyz' + '/marketing', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(info),
+      })
+        .then(response => response.json())
+        .then(alert(`Thank you for contacting us, you will receive an email soon`))
+        .catch(error => console.error(error));
+    } catch (err) {
+      //console.log(err);
+    }
   }
 
   render() {
@@ -112,7 +115,6 @@ class UserForm extends Component {
                 name={'firstname'}
               />
             </label>
-
           </div>
 
           <div>
@@ -164,7 +166,10 @@ class UserForm extends Component {
           </div>
 
           <div>
-            <ButtonLink onClick={e => this.handleOnClick(e)} href="#" rel="nofollow noopener noreferrer">
+            <ButtonLink
+              onClick={e => this.handleOnClick(e)}
+              href="#"
+              rel="nofollow noopener noreferrer">
               Access our One Pager!
             </ButtonLink>
           </div>
