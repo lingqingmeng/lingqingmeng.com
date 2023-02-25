@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Contact from '../components/contact';
 import UserForm from '../components/userform';
 import styled from 'styled-components';
 import Layout from '../components/layout';
@@ -15,7 +14,6 @@ const MarketingUserForm = ({ data, location }) => {
   return (
     <Layout location={location}>
       <MainContainer id="resources">
-        <Contact data={data.contact.edges} />
         <UserForm data={data.userform.edges} location={location} />
       </MainContainer>
     </Layout>

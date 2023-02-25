@@ -15,8 +15,8 @@ const Input = styled.input`
   padding: 0.5em;
   margin: 0.5em;
   background: DarkSlateGrey;
-  color: ${colors_option_b.lightestSlate};
-  border: 2px solid palevioletred;
+  color: ${colors_option_b.lightSlate};
+  border: 2px solid grey;
   border-radius: 3px;
 `;
 
@@ -170,7 +170,7 @@ class UserForm extends Component {
               onClick={e => this.handleOnClick(e)}
               href="#"
               rel="nofollow noopener noreferrer">
-              Access our One Pager!
+              Access the One-Pager!
             </ButtonLink>
           </div>
         </form>
