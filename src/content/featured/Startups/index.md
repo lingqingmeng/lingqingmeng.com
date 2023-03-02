@@ -1,11 +1,13 @@
 ---
-date: '4'
+date: '3'
 title: 'Start-ups, Start-ups Everywhere, But Not an Idea to Take.'
 cover: './StartupsImg.png'
 tech:
 show: 'true'
 ---
 
+<p><img src="StartupsImg.png"></p>
+<br><br>
 Are you struggling with coming up with an idea for your start-up? Take Africa's lead.
 <br><br>
 
@@ -17,13 +19,13 @@ The constant outpour of new enterprises in a digitalized world makes it seem tha
 <br><br>
 The answer could be found in exploring a few vital African start-ups, and the economies in which start-ups thrive.
 <br><br>
-Traditionally, the continent of Africa contained some of the most poverty-stricken nations in the world. But the winds of change are currently blowing! As we write this, <br>keywords like "Africa's start-up companies and African<br> start-up funding" are booming.
+Traditionally, the continent of Africa contained some of the most poverty-stricken nations in the world. But the winds of change are currently blowing! As we write this, keywords like "Africa's start-up companies and African start-up funding" are booming.
 <br><br>
-What are these founders doing right? And how can we<br> echo their approach in our business?
+What are these founders doing right? And how can we echo their approach in our business?
 <br><br>
-It all begins with two simple steps to create a flourishing<br> start-up business.
+It all begins with two simple steps to create a flourishing start-up business.
 <br><br>
-First, identify a problem. This could be<br> a problem you have, a problem you've solved in the past,<br> or a problem you've placed in various systems.
+First, identify a problem. This could be a problem you have, a problem you've solved in the past, or a problem you've placed in various systems.
 <br><br>
 Second, solve it one of two ways:
 <br><br>

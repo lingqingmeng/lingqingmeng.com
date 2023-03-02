@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+//import Img from 'gatsby-image';
 // import ScrollReveal from 'scrollreveal';
 // import { srConfig } from '../config';
 import { IconGithub, IconExternal } from './icons';
@@ -98,63 +98,10 @@ const Links = styled.div`
     }
   }
 `;
-const FeaturedImg = styled(Img)`
-  width: 100%;
-  max-width: 100%;
-  vertical-align: middle;
-  border-radius: ${theme.borderRadius};
-  position: relative;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1) brightness(90%);
-  ${media.tablet`
-    object-fit: cover;
-    width: auto;
-    height: 100%;
-    filter: grayscale(100%) contrast(1) brightness(80%);
-  `};
-`;
-const ImgContainer = styled.div`
-  position: relative;
-  z-index: 1;
-  border-radius: ${theme.borderRadius};
-  background-color: ${colors_option_b.lightestSlate};
-  border-radius: 2px;
-  grid-column: 6 / -1;
-  grid-row: 1 / -1;
-  transition: ${theme.transition};
-  ${media.tablet`height: 100%;`};
-  ${media.thone`
-    grid-column: 1 / -1;
-    opacity: 0.25;
-  `};
-  &:hover,
-  &:focus {
-    background: transparent;
-    &:before,
-    ${FeaturedImg} {
-      background: transparent;
-      filter: none;
-    }
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    transition: ${theme.transition};
-    background-color: ${colors_option_b.navy};
-    mix-blend-mode: screen;
-  }
-`;
 const Project = styled.div`
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   align-items: center;
   margin-bottom: 100px;
   ${media.thone`margin-bottom: 70px;`};
@@ -164,7 +111,7 @@ const Project = styled.div`
   &:nth-of-type(odd) {
     ${ContentContainer} {
       grid-column: 7 / -1;
-      text-align: right;
+      text-align: left;
       ${media.thone`
         grid-column: 1 / -1;
         padding: 40px 40px 30px;
@@ -182,14 +129,6 @@ const Project = styled.div`
       justify-content: flex-end;
       margin-left: 0;
       margin-right: -10px;
-    }
-    ${ImgContainer} {
-      grid-column: 1 / 8;
-      ${media.tablet`height: 100%;`};
-      ${media.thone`
-        grid-column: 1 / -1;
-        opacity: 0.25;
-      `};
     }
   }
 `;
@@ -222,7 +161,7 @@ class Featured extends Component {
           {featuredProjects &&
             featuredProjects.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { external, title, tech, github, cover } = frontmatter;
+              const { external, title, tech, github } = frontmatter;
 
               return (
                 <Project key={i} ref={el => (this.revealRefs[i] = el)}>
@@ -270,10 +209,6 @@ class Featured extends Component {
                       )}
                     </Links>
                   </ContentContainer>
-
-                  <ImgContainer>
-                    <FeaturedImg fluid={cover.childImageSharp.fluid} />
-                  </ImgContainer>
                 </Project>
               );
             })}

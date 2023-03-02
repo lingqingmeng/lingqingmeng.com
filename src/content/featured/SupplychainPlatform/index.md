@@ -9,7 +9,7 @@ tech:
   - MFA
   - Accounting
   - Payroll
-show: 'true'
+show: 'false'
 ---
 
 #### Startups utilize
