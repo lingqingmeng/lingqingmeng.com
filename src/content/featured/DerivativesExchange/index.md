@@ -9,7 +9,7 @@ tech:
   - Solidity
   - Kubernetes
   - AWS
-show: 'true'
+show: 'false'
 ---
 
 Our platform gives you the flexibility <br/>
