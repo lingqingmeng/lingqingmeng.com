@@ -1,10 +1,10 @@
 module.exports = {
   siteTitle: 'Founders Kit - Blockchain contract management platform',
-  siteDescription: '& the number one way to hire an engineer',
-  siteKeywords: 'substrate, polkadot, nodejs, rust',
+  siteDescription: '',
+  siteKeywords: 'Venture Capital',
   siteUrl: 'https://ondecentral.com',
   siteLanguage: 'en_US',
-  name: 'Ling Qing Meng',
+  name: 'Decentral',
   location: 'San Francisco, CA',
   email: 'info@ondecentral.com',
   openPositions: 'https://angel.co/company/decentralinc/jobs',
@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/lingqingm',
+      url: 'https://twitter.com/founders_kit',
     },
   ],
 
@@ -51,7 +51,7 @@ module.exports = {
     },
   ],
 
-  twitterHandle: '@lingqingm',
+  twitterHandle: '@founders_kit',
   googleAnalyticsID: 'G-9HMJ423VGZ',
 
   googleVerification: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',
