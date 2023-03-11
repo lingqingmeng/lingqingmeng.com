@@ -82,6 +82,23 @@ class UserForm extends Component {
     const { frontmatter } = data[0].node;
     const { title, firstname, lastname, email, company, industry } = frontmatter;
 
+    const info = {
+      title: 'User visited free marketing page',
+      source: 'Decentral Portal',
+    };
+    try {
+      fetch('https://api.stage.founderstable.xyz' + '/mixpanel', {
+        //fetch('http://localhost:3000' + '/mixpanel', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(info),
+      });
+    } catch (err) {
+      //console.log(err);
+    }
+
     return (
       <UserFormContainer id="userform" ref={el => (this.userform = el)}>
         <Title>{title}</Title>
