@@ -23,8 +23,8 @@ const IndexPage = ({ data, location }) => {
     source: 'Decentral Portal',
   };
   try {
-    //fetch('https://api.stage.founderstable.xyz' + '/mixpanel', {
-    fetch('http://localhost:3000' + '/mixpanel', {
+    fetch('https://api.stage.founderstable.xyz' + '/mixpanel', {
+      //fetch('http://localhost:3000' + '/mixpanel', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
