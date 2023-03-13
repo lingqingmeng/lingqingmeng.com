@@ -74,6 +74,12 @@ class UserForm extends Component {
     const { data } = this.props;
     const { frontmatter } = data[0].node;
     const { title } = frontmatter;
+    // const { title, firstname, lastname, email, company, industry } = frontmatter;
+
+    const info = {
+      title: 'User visited free marketing page',
+      source: 'Decentral Portal',
+    };
 
     const contact_description = {
       width: '80%',
@@ -143,14 +149,14 @@ class UserForm extends Component {
       // 'margin-top':'0'
     };
     try {
-      // fetch('https://api.founderskit.org' + '/mixpanel', {
-      //   //fetch('http://localhost:3000' + '/mixpanel', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/x-www-form-urlencoded',
-      //   },
-      //   body: new URLSearchParams(info),
-      // });
+      fetch('https://api.founderskit.org' + '/mixpanel', {
+        //fetch('http://localhost:3000' + '/mixpanel', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(info),
+      });
     } catch (err) {
       //console.log(err);
     }
