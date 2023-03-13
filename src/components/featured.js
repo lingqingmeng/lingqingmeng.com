@@ -159,7 +159,7 @@ class Featured extends Component {
       source: 'Decentral Portal',
     };
     try {
-      fetch('https://api.stage.founderstable.xyz' + '/mixpanel', {
+      fetch('https://api.founderskit.org' + '/mixpanel', {
         //fetch('http://localhost:3000' + '/mixpanel', {
         method: 'POST',
         headers: {
