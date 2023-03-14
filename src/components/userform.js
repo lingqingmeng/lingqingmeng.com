@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
 const { fontSizes } = theme;
-import { API_URL } from '../../config';
 // import React, { useRef } from 'react';
 
 const UserFormContainer = styled.main`
@@ -58,7 +57,7 @@ class UserForm extends Component {
       industry: uform['industry'].value,
     };
 
-    fetch(`${API_URL}/marketing`, {
+    fetch(`https://api.founderskit.org' + '/marketing`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
