@@ -57,7 +57,7 @@ class UserForm extends Component {
       industry: uform['industry'].value,
     };
 
-    fetch(`https://api.founderskit.org' + '/marketing`, {
+    fetch('https://api.founderskit.org' + '/marketing', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
