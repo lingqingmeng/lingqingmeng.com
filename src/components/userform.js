@@ -2,22 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { theme, mixins, media } from '../styles';
-const { colors_option_b, fontSizes } = theme;
-//import { API_URL } from '../../config';
+const { fontSizes } = theme;
+import { API_URL } from '../../config';
+// import React, { useRef } from 'react';
 
 const UserFormContainer = styled.main`
   position: relative;
   margin: 0 auto 100px;
-  padding: 150px 0;
-`;
-
-const Input = styled.input`
-  padding: 0.5em;
-  margin: 0.5em;
-  background: DarkSlateGrey;
-  color: ${colors_option_b.lightSlate};
-  border: 2px solid grey;
-  border-radius: 3px;
+  padding: 150px 0 0px 0;
+  text-align: center;
+  display:flex,
+  flex-direction: column,
+  align-item:center,
 `;
 
 const Title = styled.h1`
@@ -61,30 +57,96 @@ class UserForm extends Component {
       company: uform['company'].value,
       industry: uform['industry'].value,
     };
-    try {
-      fetch('https://api.stage.founderstable.xyz' + '/marketing', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(info),
-      })
-        .then(response => response.json())
-        .then(alert(`Thank you for contacting us, you will receive an email soon`))
-        .catch(error => console.error(error));
-    } catch (err) {
-      //console.log(err);
-    }
+
+    fetch(`${API_URL}/marketing`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams(info),
+    })
+      .then(response => response.json())
+      .then(alert(`Thank you for contacting us, you will receive an email soon`))
+      .catch(error => console.error(error));
   }
 
   render() {
     const { data } = this.props;
     const { frontmatter } = data[0].node;
-    const { title, firstname, lastname, email, company, industry } = frontmatter;
+    const { title } = frontmatter;
+    // const { title, firstname, lastname, email, company, industry } = frontmatter;
 
     const info = {
       title: 'User visited free marketing page',
       source: 'Decentral Portal',
+    };
+
+    const contact_description = {
+      width: '80%',
+      'margin-left': '10%',
+      'margin-top': '25px',
+      'margin-bottom': '60px',
+    };
+
+    const userform_cont = {
+      width: '80%',
+      'margin-left': '10%',
+      display: 'flex',
+      'margin-top': '0px',
+      background: '#2b2824',
+    };
+
+    const form_container = {
+      width: '65%',
+      display: 'flex',
+    };
+
+    const Learnaboutcont = {
+      width: '35%',
+      height: '100%',
+      'text-align': 'Left',
+      display: 'flex',
+      padding: '100px 50px',
+      'flex-direction': 'column',
+      'justify-content': 'center',
+      'border-left': '2px solid red ',
+    };
+    const learnabout_subheads = {
+      'margin-left': '15px',
+      'list-style': '',
+    };
+
+    const input_contains = {
+      width: '100%',
+      'margin-top': '80px',
+    };
+    const input_sub_container = {
+      width: '100%',
+      display: 'flex',
+      'flex-direction': 'column',
+      'justify-content': 'center',
+    };
+    const input_arrange = {
+      width: '60%',
+      height: '100%',
+      'margin-left': '10%',
+      margin: '0.4em',
+      marginLeft: '0',
+      marginRight: '0px',
+      background: 'DarkSlateGrey',
+      borderRadius: '10px',
+      border: 'none',
+      padding: '15px 20px',
+      textAlign: 'center',
+    };
+
+    const formbtns = {
+      'margin-top': '15px',
+    };
+
+    const userbody = {
+      // 'position':'absolute',
+      // 'margin-top':'0'
     };
     try {
       fetch('https://api.founderskit.org' + '/mixpanel', {
@@ -100,98 +162,112 @@ class UserForm extends Component {
     }
 
     return (
-      <UserFormContainer id="userform" ref={el => (this.userform = el)}>
-        <Title>{title}</Title>
-        <h3>
-          {' '}
-          Startups need cashflow more than ever. They need to manage their back office more
-          effectively. Easier said than done.{' '}
-        </h3>
-        <h4>
-          {' '}
-          The status quo is that startups often get buried in the upkeep. They cannot scale nor
-          delegate quickly enough to reach operational scalability{' '}
-        </h4>
-        <h4>Download this One pager to learn about:</h4>
-        <br />
-        <h5>How to calculate options</h5>
-        <h5>How to find product market fit with the lowest possible budget</h5>
-        <h5>
-          How these methods have been used by industry incumbents and have been hid from the general
-          public
-        </h5>
+      <div style={userbody}>
+        <UserFormContainer id="userform" ref={el => (this.userform = el)}>
+          <Title>{title}</Title>
+          <h5 style={contact_description}>
+            Startups need cashflow more than ever. They need to manage their back office more
+            effectively. Easier said than done. The status quo is that startups often get buried in
+            the upkeep. They cannot scale nor delegate quickly enough to reach operational
+            scalability.
+          </h5>
 
-        <form ref={this.userform}>
-          <div>
-            <label>
-              {firstname}
-              <Input
-                defaultValue=""
-                type="text"
-                onChange={e => this.handleInputChange('firstname', e)}
-                name={'firstname'}
-              />
-            </label>
-          </div>
+          <h4>Download this One pager</h4>
+          <br />
 
-          <div>
-            <label>
-              {lastname}
-              <Input
-                defaultValue=""
-                type="text"
-                onChange={e => this.handleInputChange('lastname', e)}
-                name={'lastname'}
-              />
-            </label>
-          </div>
+          <div style={userform_cont}>
+            <div style={form_container}>
+              <form ref={this.userform} style={input_contains}>
+                <div style={input_sub_container}>
+                  <label>
+                    <input
+                      style={input_arrange}
+                      defaultValue=""
+                      type="text"
+                      onChange={e => this.handleInputChange('firstname', e)}
+                      name={'firstname'}
+                      placeholder="firstname"
+                    />
+                  </label>
+                </div>
 
-          <div>
-            <label>
-              {company}
-              <Input
-                defaultValue=""
-                type="text"
-                onChange={e => this.handleInputChange('company', e)}
-                name={'company'}
-              />
-            </label>
-          </div>
+                <div style={input_sub_container}>
+                  <label>
+                    <input
+                      style={input_arrange}
+                      defaultValue=""
+                      type="text"
+                      onChange={e => this.handleInputChange('lastname', e)}
+                      name={'lastname'}
+                      placeholder="lastname"
+                    />
+                  </label>
+                </div>
 
-          <div>
-            <label>
-              {email}
-              <Input
-                defaultValue=""
-                type="text"
-                onChange={e => this.handleInputChange('email', e)}
-                name={'email'}
-              />
-            </label>
-          </div>
+                <div style={input_sub_container}>
+                  <label>
+                    <input
+                      style={input_arrange}
+                      defaultValue=""
+                      type="text"
+                      onChange={e => this.handleInputChange('company', e)}
+                      name={'company'}
+                      placeholder="company name"
+                    />
+                  </label>
+                </div>
 
-          <div>
-            <label>
-              {industry}
-              <Input
-                defaultValue=""
-                type="text"
-                onChange={e => this.handleInputChange('industry', e)}
-                name={'industry'}
-              />
-            </label>
-          </div>
+                <div style={input_sub_container}>
+                  <label>
+                    <input
+                      style={input_arrange}
+                      defaultValue=""
+                      type="text"
+                      onChange={e => this.handleInputChange('email', e)}
+                      name={'email'}
+                      placeholder="email"
+                    />
+                  </label>
+                </div>
 
-          <div>
-            <ButtonLink
-              onClick={e => this.handleOnClick(e)}
-              href="#"
-              rel="nofollow noopener noreferrer">
-              Access the One-Pager!
-            </ButtonLink>
+                <div style={input_sub_container}>
+                  <label>
+                    <input
+                      style={input_arrange}
+                      defaultValue=""
+                      type="text"
+                      onChange={e => this.handleInputChange('industry', e)}
+                      name={'industry'}
+                      placeholder="industry"
+                    />
+                  </label>
+                </div>
+
+                <div style={formbtns}>
+                  <ButtonLink
+                    onClick={e => this.handleOnClick(e)}
+                    href="#"
+                    rel="nofollow noopener noreferrer">
+                    Access our One Pager!
+                  </ButtonLink>
+                </div>
+              </form>
+            </div>
+
+            <div style={Learnaboutcont}>
+              <h1>Learn About</h1>
+              <h5 style={learnabout_subheads}># How to calculate options</h5>
+              <h5 style={learnabout_subheads}>
+                # How to find product market fit with the lowest possible budget
+              </h5>
+              <h5 style={learnabout_subheads}>
+                # How these methods have been used by industry incumbents and have been hid from the
+                general public
+              </h5>
+            </div>
           </div>
-        </form>
-      </UserFormContainer>
+        </UserFormContainer>
+      </div>
     );
   }
 }
