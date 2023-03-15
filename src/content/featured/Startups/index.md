@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '2'
 title: 'Start-ups, Start-ups Everywhere, But Not an Idea to Take.'
 cover: './StartupsImg.png'
 tech:
