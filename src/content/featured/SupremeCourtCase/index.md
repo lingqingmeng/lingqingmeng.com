@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '3'
 title: 'A Supreme Court case that could change future tech, and dethrone tech giants like Meta, Twitter, and Google'
 cover: './zkstark.jpeg'
 tech:
@@ -26,7 +26,7 @@ What is being brought up in Section 230 reform? And is Section 230 bad?
 </span>
 <br/>
 
-These are the four main points* of Section 230 that are “ripe” for reform:
+These are the four main points\* of Section 230 that are “ripe” for reform:
 <br/><br/>
 
 <ol style="text-align: left;">
@@ -42,7 +42,7 @@ These are the four main points* of Section 230 that are “ripe” for reform:
 Read the full description <a href="https://www.justice.gov/archives/ag/department-justice-s-review-section-230-communications-decency-act-1996#:~:text=This%20reform%20would%20focus%20the,by%20deeming%20it%20%E2%80%9Cobjectionable.%E2%80%9D" style="color: red;" target="_blank">here.</a> 
 <br/><br/>
 
-These potential reformations seem rational, but the Supreme Court will hear two cases in the coming months, and their verdict could change everything. Both cases state that online platforms shouldn’t be punished for what their users post but should be held accountable for the information their algorithms promote. The alarming parts about a potential reform are: the judges making the calls most likely do not understand the implications of what their rulings might enact and the ripple-down effect these might cause to future internet users. If the Supreme Court rules that online platforms are responsible for what their users post it could cause irreversible harm to major platforms as well as potentially shut down the next generation of websites and apps. 
+These potential reformations seem rational, but the Supreme Court will hear two cases in the coming months, and their verdict could change everything. Both cases state that online platforms shouldn’t be punished for what their users post but should be held accountable for the information their algorithms promote. The alarming parts about a potential reform are: the judges making the calls most likely do not understand the implications of what their rulings might enact and the ripple-down effect these might cause to future internet users. If the Supreme Court rules that online platforms are responsible for what their users post it could cause irreversible harm to major platforms as well as potentially shut down the next generation of websites and apps.
 
 <br/>
     A list of pros and cons of Section 230 reform for founders:
