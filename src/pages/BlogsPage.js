@@ -13,7 +13,7 @@ const MainContainer = styled(Main)`
 
 const BlogsPage = ({ data, location }) => {
   const info = {
-    title: 'Decentral Home Page',
+    title: 'Blogs',
     source: 'Decentral Portal',
   };
   try {
