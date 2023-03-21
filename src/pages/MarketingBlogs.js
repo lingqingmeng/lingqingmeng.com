@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/layout';
 import Featured from '../components/featured';
-import Projects from '../components/projects';
 import styled from 'styled-components';
 import { mixins, Main } from '../styles';
 
@@ -34,7 +33,6 @@ const MarketingBlogs = ({ data, location }) => {
     <Layout location={location}>
       <MainContainer id="blogs">
         <Featured data={data.featured.edges} />
-        <Projects data={data.projects.edges} location={location} />
       </MainContainer>
     </Layout>
   );
@@ -64,24 +62,6 @@ export const query = graphql`
                 }
               }
             }
-            tech
-            github
-            external
-            show
-          }
-          html
-        }
-      }
-    }
-    projects: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            image
             tech
             github
             external
