@@ -5,7 +5,6 @@ import Layout from '../components/layout';
 import Hero from '../components/hero';
 import About from '../components/about';
 import Product from '../components/product';
-import Featured from '../components/featured';
 import Projects from '../components/projects';
 import Team from '../components/team';
 import Contact from '../components/contact';
@@ -41,7 +40,6 @@ const IndexPage = ({ data, location }) => {
         <Hero data={data.hero.edges} />
         <About data={data.about.edges} />
         <Product data={data.product.edges} />
-        <Featured data={data.featured.edges} />
         <Projects data={data.projects.edges} location={location} />
         <Team data={data.team.edges} />
         <Contact data={data.contact.edges} />
@@ -102,30 +100,6 @@ export const query = graphql`
             location
             range
             url
-          }
-          html
-        }
-      }
-    }
-    featured: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/featured/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-            tech
-            github
-            external
-            show
           }
           html
         }
