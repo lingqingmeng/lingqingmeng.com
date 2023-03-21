@@ -11,7 +11,7 @@ const MainContainer = styled(Main)`
   counter-reset: section;
 `;
 
-const MarketingBlogs = ({ data, location }) => {
+const BlogsPage = ({ data, location }) => {
   const info = {
     title: 'Decentral Home Page',
     source: 'Decentral Portal',
@@ -38,12 +38,12 @@ const MarketingBlogs = ({ data, location }) => {
   );
 };
 
-MarketingBlogs.propTypes = {
+BlogsPage.propTypes = {
   data: PropTypes.object.isRequired,
   location: PropTypes.object,
 };
 
-export default MarketingBlogs;
+export default BlogsPage;
 
 export const query = graphql`
   query blogsQuery {

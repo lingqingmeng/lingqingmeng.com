@@ -250,7 +250,7 @@ class Header extends Component {
     const { location, navLinks } = this.props;
     const { pathname } = location;
     const isResource = pathname === '/MarketingUserForm'; // should use a better design pattern
-    const isBlogs = pathname === '/MarketingBlogs/';
+    const isBlogs = pathname === '/BlogsPage';
     const isHome = location && location.pathname === '/';
 
     return (
@@ -296,7 +296,7 @@ class Header extends Component {
                         </NavListItem>
                       </CSSTransition>
                     ))}
-                  <ResumeLink href={'/MarketingBlogs/'}>Blogs</ResumeLink>
+                  <ResumeLink href={'/BlogsPage'}>Blogs</ResumeLink>
                 </TransitionGroup>
               </NavList>
             )}
