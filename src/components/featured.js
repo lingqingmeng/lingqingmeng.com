@@ -154,23 +154,6 @@ class Featured extends Component {
     const { data } = this.props;
     const featuredProjects = data.filter(({ node }) => node.frontmatter.show === 'true');
 
-    const info = {
-      title: 'User visited blogs section',
-      source: 'Decentral Portal',
-    };
-    try {
-      fetch('https://api.founderskit.org' + '/mixpanel', {
-        //fetch('http://localhost:3000' + '/mixpanel', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(info),
-      });
-    } catch (err) {
-      //console.log(err);
-    }
-
     return (
       <FeaturedContainer id="projects">
         <Heading ref={el => (this.featured = el)}>Join the community</Heading>
