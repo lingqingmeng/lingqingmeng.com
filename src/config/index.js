@@ -1,7 +1,8 @@
 module.exports = {
-  siteTitle: 'Founders Kit - Blockchain contract management platform',
-  siteDescription: '& the number one way to hire an engineer',
-  siteKeywords: 'substrate, polkadot, nodejs, rust',
+  siteTitle:
+    'Lucia Protocol - Infrastructure for Lending and Borrowing | Privacy Focused Web3 Access  |  Built on Polygon ',
+  siteDescription: 'ZK-Proofs Implementation | Decentralized DeFi Platform',
+  siteKeywords: 'zkevm, blockchain, lending, defi, loans, nodejs, rust',
   siteUrl: 'https://ondecentral.com',
   siteLanguage: 'en_US',
   name: 'Ling Qing Meng',
