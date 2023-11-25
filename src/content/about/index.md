@@ -12,16 +12,11 @@ integrations:
   - Node.js
 ---
 
-The number one way to onboard stakeholders onto your project. We turn a creator into a founder by creating a framework for their team and staff to sell more, sell at higher prices, and sell to an expanded global market. Create organization single sources of truth with the click of a button.
+# Access to Credit has changed
 
+### Capital efficient loans for the consumer of tomorrow
+
+Lucia Protocol is a non-custodial lending and borrowing platform aimed at providing frictionless credit access to both individuals and startup enterprises. Lucia’s AI-powered credit evaluation process revolutionizes the financial sector by taking into account a wide range of on-chain and off-chain metrics.
+
+This credit availability is intended not just for short-term needs but also for operational sustainability and long-term growth
 Business leaders now must prioritize data protection, automation, and data driven decision making over old fashioned and outdated methodologies.
-
-✓ [Our platform](https://portal.founderskit.org) handles the messy, complex cybersecurity nuances
-
-✓ Essentials for startups - yet very cost-intensive
-
-#### Composed of 2 primary components
-
-✓ Anyone will be able to sign up and generate a dedicated, self hosted data vault on our site for a flat monthly fee.
-
-✓ Use to accept blockchain transactions and e-commerce payments from their end users.

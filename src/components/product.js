@@ -174,12 +174,12 @@ class Product extends Component {
 
     return (
       <ProductContainer id="product" ref={el => (this.product = el)}>
-        <Heading>We're hiring</Heading>
+        <Heading>See what's possible with Lucia Protocol</Heading>
         <TabsContainer>
           <Tabs role="tablist">
             {data &&
               data.map(({ node }, i) => {
-                const { company } = node.frontmatter;
+                const { url } = node.frontmatter;
                 return (
                   <Tab
                     key={i}
@@ -190,7 +190,7 @@ class Product extends Component {
                     aria-controls={`tab${i}`}
                     id={`tab${i}`}
                     tabIndex={this.isActive(i) ? '0' : '-1'}>
-                    <span>{company}</span>
+                    <span>{url}</span>
                   </Tab>
                 );
               })}
