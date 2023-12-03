@@ -17,22 +17,18 @@ const MainContainer = styled(Main)`
 `;
 
 const IndexPage = ({ data, location }) => {
-  const info = {
-    title: 'Decentral Home Page',
-    source: 'Decentral Portal',
-  };
-  try {
-    fetch('https://api.founderskit.org' + '/mixpanel', {
-      //fetch('http://localhost:3000' + '/mixpanel', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: new URLSearchParams(info),
-    });
-  } catch (err) {
-    //console.log(err);
-  }
+  // try {
+  //   fetch('https://api.founderskit.org' + '/mixpanel', {
+  //     //fetch('http://localhost:3000' + '/mixpanel', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     body: new URLSearchParams(info),
+  //   });
+  // } catch (err) {
+  //   //console.log(err);
+  // }
 
   return (
     <Layout location={location}>

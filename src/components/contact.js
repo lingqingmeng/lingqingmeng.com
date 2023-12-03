@@ -27,7 +27,6 @@ const ContactContainer = styled(Section)`
   }
 
   footer {
-    background-color: #24262b;
     padding: 70px 0;  
   }
   
