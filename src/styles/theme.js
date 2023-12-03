@@ -58,7 +58,7 @@ const theme = {
   borderRadius: '2px',
   headerHeight: '100px',
   headerScrollHeight: '70px',
-  margin: '20px',
+  margin: '0px',
 
   tabHeight: 42,
   tabWidth: 120,

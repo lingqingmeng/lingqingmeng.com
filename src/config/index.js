@@ -2,10 +2,10 @@ module.exports = {
   siteTitle:
     'Lucia Protocol - Infrastructure for Lending and Borrowing | Privacy Focused Web3 Access  |  Built on Polygon ',
   siteDescription: 'ZK-Proofs Implementation | Decentralized DeFi Platform',
-  siteKeywords: 'zkevm, blockchain, lending, defi, loans, nodejs, rust',
+  siteKeywords: 'zkevm, blockchain, lending, defi, loans, nodejs, rust, venture capital, vc',
   siteUrl: 'https://ondecentral.com',
   siteLanguage: 'en_US',
-  name: 'Ling Qing Meng',
+  name: 'Decentral',
   location: 'San Francisco, CA',
   email: 'info@ondecentral.com',
   openPositions: 'https://angel.co/company/decentralinc/jobs',
@@ -25,7 +25,7 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/lingqingm',
+      url: 'https://twitter.com/founders_kit',
     },
   ],
 
@@ -39,10 +39,6 @@ module.exports = {
       url: '#product',
     },
     {
-      name: 'Case Studies',
-      url: '#projects',
-    },
-    {
       name: 'Team',
       url: '#team',
     },
@@ -52,7 +48,7 @@ module.exports = {
     },
   ],
 
-  twitterHandle: '@lingqingm',
+  twitterHandle: '@founders_kit',
   googleAnalyticsID: 'G-9HMJ423VGZ',
 
   googleVerification: '6sWFAYxVRjcZIj568rtimRaEsmce8cDIRSk3YLutZxI',

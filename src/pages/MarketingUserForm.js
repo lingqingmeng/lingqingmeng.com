@@ -9,14 +9,15 @@ import { mixins, Main } from '../styles';
 const MainContainer = styled(Main)`
   ${mixins.sidePadding};
   counter-reset: section;
+  position: relative;
 `;
 
 const MarketingUserForm = ({ data, location }) => {
   return (
     <Layout location={location}>
       <MainContainer id="resources">
-        <Contact data={data.contact.edges} />
         <UserForm data={data.userform.edges} location={location} />
+        <Contact data={data.contact.edges} />
       </MainContainer>
     </Layout>
   );

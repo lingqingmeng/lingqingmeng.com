@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'LingQingMeng',
-        short_name: 'LingQingMeng',
+        name: 'Decentral',
+        short_name: 'Decentral',
         start_url: '/',
         background_color: config.eeColor,
         theme_color: config.armColor,

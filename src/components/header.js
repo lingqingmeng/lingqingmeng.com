@@ -250,6 +250,7 @@ class Header extends Component {
     const { location, navLinks } = this.props;
     const { pathname } = location;
     const isResource = pathname === '/MarketingUserForm'; // should use a better design pattern
+    const isBlogs = pathname === '/BlogsPage';
     const isHome = location && location.pathname === '/';
 
     return (
@@ -295,11 +296,23 @@ class Header extends Component {
                         </NavListItem>
                       </CSSTransition>
                     ))}
+                  <ResumeLink href={'/BlogsPage'}>Blogs</ResumeLink>
                 </TransitionGroup>
               </NavList>
             )}
             <TransitionGroup>
               {isMounted && isResource && (
+                <CSSTransition classNames="fadedown" timeout={3000}>
+                  <div style={{ transitionDelay: `600ms` }}>
+                    <ResumeLink href={'/'} rel="nofollow noopener noreferrer">
+                      Main Page
+                    </ResumeLink>
+                  </div>
+                </CSSTransition>
+              )}
+            </TransitionGroup>
+            <TransitionGroup>
+              {isBlogs && (
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
                     <ResumeLink href={'/'} rel="nofollow noopener noreferrer">

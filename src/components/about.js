@@ -22,14 +22,7 @@ const ContentContainer = styled.div`
     ${mixins.inlineLink};
   }
 `;
-const Input = styled.input`
-  padding: 0.5em;
-  margin: 0.5em;
-  background: DarkSlateGrey;
-  color: ${colors_option_b.lightestSlate};
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-`;
+
 const SkillsContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -157,8 +150,7 @@ class About extends Component {
           </div>
         </FlexContainer>
         <div style={{ transitionDelay: '2500ms' }}>
-          <Input defaultValue="@Email" type="text" />
-          <EmailLink href={`https://google.com`}>Submit The Form</EmailLink>
+          <EmailLink href={`/MarketingUserForm`}>Access the One-Pager</EmailLink>
         </div>
       </AboutContainer>
     );

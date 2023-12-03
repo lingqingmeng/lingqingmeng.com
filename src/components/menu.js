@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import FormD from '../documents/FormD.pdf';
 import styled from 'styled-components';
 import { theme, mixins, media, Nav } from '../styles';
 const { colors_option_b, fontSizes, fonts } = theme;
@@ -104,8 +103,8 @@ class Menu extends Component {
                   ))}
               </NavList>
             )}
-            <ResumeLink href={FormD} target="_blank" rel="nofollow noopener noreferrer">
-              Investors
+            <ResumeLink href={'/'} rel="nofollow noopener noreferrer">
+              Main Page
             </ResumeLink>
           </NavLinks>
         </Sidebar>
